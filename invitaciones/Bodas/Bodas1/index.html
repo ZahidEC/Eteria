@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acompaña a Sofía y Mateo a celebrar su boda. Nuestra historia, itinerario y confirmación de asistencia.">
+  <title>Sofía & Mateo · Nuestra boda</title>
+  <link rel="icon" href="assets/icons/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer>
+</script>
+<script src="js/main.js" defer>
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<!-- 01. NAVEGACIÓN -->
+<header class="header">
+<a href="#inicio" aria-label="Sofía y Mateo, inicio">
+<img class="monogram" src="assets/icons/monograma.svg" alt="S/M" width="60" height="60">
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menú">
+<span>
+</span>
+<span>
+</span>
+</button>
+<nav id="navigation" aria-label="Navegación principal">
+<a href="#inicio">Inicio</a>
+<a href="#historia">Nuestra historia</a>
+<a href="#detalles">Detalles</a>
+<a href="#rsvp">RSVP</a>
+<a href="#firmas">Libro de firmas</a>
+</nav>
+</header>
+<main id="contenido">
+<!-- 02. PORTADA: cambia nombres y fecha en js/config.js -->
+<section class="hero" id="inicio">
+<img class="hero-photo" src="assets/images/portada.webp" alt="Una pareja abrazándose frente a las montañas" fetchpriority="high" width="1536" height="1024">
+<div class="hero-inner">
+<p class="eyebrow intro">Una vida juntos</p>
+<h1>
+<span data-bride>Sofía</span>
+<span class="second-name">
+<i>&</i> <span data-groom>Mateo</span>
+</span>
+</h1>
+<p class="marry">Nos casamos</p>
+<p class="event-date">
+<span data-date>
+</span> <span class="dot">·</span> <span data-city>
+</span>
+</p>
+<div class="countdown" aria-label="Tiempo para la boda">
+<div>
+<strong id="days">00</strong>
+<span>Días</span>
+</div>
+<div>
+<strong id="hours">00</strong>
+<span>Horas</span>
+</div>
+<div>
+<strong id="minutes">00</strong>
+<span>Minutos</span>
+</div>
+<div>
+<strong id="seconds">00</strong>
+<span>Segundos</span>
+</div>
+</div>
+<p id="countdown-note" class="small">
+</p>
+<a class="discover" href="#historia">Desliza para descubrir <span>↓</span>
+</a>
+</div>
+</section>
+<!-- 03. HISTORIA: tarjetas generadas desde config.js -->
+<section class="section history" id="historia">
+<div class="section-heading">
+<p class="eyebrow">El comienzo de todo</p>
+<h2>Nuestra historia</h2>
+<span class="rule">
+</span>
+</div>
+<div class="timeline" id="timeline">
+</div>
+</section>
+<!-- 04. ITINERARIO Y UBICACIÓN -->
+<section class="section details" id="detalles">
+<div class="schedule">
+<h2>Detalles</h2>
+<span class="rule">
+</span>
+<ul id="schedule-list">
+</ul>
+</div>
+<figure class="venue-photo">
+<img src="assets/images/hacienda.webp" alt="Hacienda de piedra rodeada de vegetación, imagen ilustrativa" loading="lazy" width="1122" height="1402">
+<figcaption>Un lugar para recordar</figcaption>
+</figure>
+<div class="location">
+<p class="eyebrow">Nos vemos aquí</p>
+<h3>¿Cómo llegar?</h3>
+<p id="venue-name">
+</p>
+<p id="venue-address">
+</p>
+<a id="map-link" class="map-card" target="_blank" rel="noopener noreferrer" aria-label="Consultar ubicación en Google Maps">
+<span class="map-pin">⌖</span>
+<span data-city>
+</span>
+<small>Consultar en Google Maps ↗</small>
+</a>
+<a id="location-button" class="button" target="_blank" rel="noopener noreferrer">Ver ubicación ↗</a>
+</div>
+</section>
+<!-- 05. CÓDIGO DE VESTIMENTA -->
+<section class="dress section">
+<div class="section-heading">
+<h2>Código de vestimenta</h2>
+<span class="rule">
+</span>
+<p>Una celebración especial merece un look especial.</p>
+</div>
+<div class="dress-grid">
+<article>
+<img src="assets/images/vestido.png" alt="Ilustración de vestido largo verde oliva" loading="lazy">
+<div>
+<h3>Mujeres</h3>
+<p>Vestido largo<br>formal</p>
+<span class="swatch olive" aria-label="Verde oliva">
+</span>
+</div>
+</article>
+<article>
+<img src="assets/images/traje.png" alt="Ilustración de traje formal color taupe" loading="lazy">
+<div>
+<h3>Hombres</h3>
+<p>Traje formal</p>
+<span class="swatch taupe" aria-label="Taupe">
+</span>
+</div>
+</article>
+<article class="avoid">
+<img src="assets/icons/evitar.svg" alt="Evitar">
+<div>
+<h3>Evitar</h3>
+<p>Blanco, beige claro<br>y tonos similares</p>
+</div>
+</article>
+</div>
+<p class="dress-note">Las ilustraciones son orientativas. Reserva los tonos blancos para la novia.</p>
+</section>
+<!-- 06. CONFIRMACIÓN: demo local; conexión opcional a WhatsApp en config.js -->
+<section class="section rsvp" id="rsvp">
+<div class="rsvp-intro">
+<p class="eyebrow">Queremos celebrar contigo</p>
+<h2>Confirma<br>tu asistencia</h2>
+<span class="rule">
+</span>
+<p>Por favor confirma tu asistencia<br>antes del <span id="rsvp-deadline">
+</span>.</p>
+<p id="demo-note" class="demo-note">Invitación de ejemplo · Las respuestas se guardan únicamente en este navegador.</p>
+</div>
+<form id="rsvp-form">
+<div class="form-column">
+<label for="guest-name">Nombre completo</label>
+<input id="guest-name" name="name" placeholder="Escribe tu nombre" required maxlength="100" autocomplete="name">
+<fieldset>
+<legend>¿Asistirás?</legend>
+<div class="attendance">
+<label>
+<input type="radio" name="attendance" value="Sí" required>
+<span>Sí, ahí estaré</span>
+</label>
+<label>
+<input type="radio" name="attendance" value="No">
+<span>No puedo asistir</span>
+</label>
+</div>
+</fieldset>
+<fieldset id="menu-options">
+<legend>Menú</legend>
+<label class="meal">
+<input type="radio" name="meal" value="Carne" required>
+<span>
+<b>Carne</b>Filete de res con salsa de vino tinto</span>
+</label>
+<label class="meal">
+<input type="radio" name="meal" value="Pescado">
+<span>
+<b>Pescado</b>Salmón en costra de hierbas con vegetales</span>
+</label>
+<label class="meal">
+<input type="radio" name="meal" value="Vegetariano">
+<span>
+<b>Vegetariano</b>Risotto de hongos con espárragos</span>
+</label>
+</fieldset>
+</div>
+<div class="form-column">
+<label for="allergies">Alergias o restricciones</label>
+<textarea id="allergies" name="allergies" rows="5" maxlength="500" placeholder="Cuéntanos si tienes alguna alergia o restricción alimenticia">
+</textarea>
+<button class="button dark" type="submit" id="rsvp-submit">Guardar confirmación</button>
+<p class="form-status" id="rsvp-status" role="status">
+</p>
+</div>
+</form>
+</section>
+<!-- 07. LIBRO DE FIRMAS: mensajes de demostración claramente identificados -->
+<section class="section guestbook" id="firmas">
+<div>
+<p class="eyebrow">Palabras para siempre</p>
+<h2>Libro de firmas</h2>
+<span class="rule">
+</span>
+<p>Déjanos tus mejores deseos<br>para esta nueva etapa.</p>
+<button class="button" id="open-message">Dejar mensaje</button>
+<p class="small">Ejemplos y mensajes guardados en este dispositivo.</p>
+</div>
+<div class="messages-wrap">
+<div class="messages" id="messages" tabindex="0" aria-label="Mensajes para los novios">
+</div>
+<div class="carousel-controls">
+<button id="previous-message" aria-label="Mensajes anteriores">←</button>
+<span>Con mucho cariño</span>
+<button id="next-message" aria-label="Mensajes siguientes">→</button>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<a href="#inicio" aria-label="Volver al inicio">
+<img src="assets/icons/monograma.svg" alt="S/M" width="45" height="45">
+</a>
+<p>
+<span data-bride>Sofía</span> & <span data-groom>Mateo</span> <span>·</span> <span data-date>
+</span>
+</p>
+<p>Diseñado con amor <span class="heart">♡</span>
+</p>
+</footer>
+<!-- Ventana accesible para escribir un mensaje -->
+<dialog id="message-dialog">
+<button class="close-dialog" type="button" aria-label="Cerrar">×</button>
+<p class="eyebrow">Un recuerdo escrito</p>
+<h2>Para los novios</h2>
+<form id="message-form">
+<label for="message-name">Tu nombre</label>
+<input id="message-name" required maxlength="80" autocomplete="name">
+<label for="message-text">Tu mensaje</label>
+<textarea id="message-text" required maxlength="500" rows="4" placeholder="Que esta nueva aventura…">
+</textarea>
+<p class="small">Se guardará solo en este navegador.</p>
+<button class="button dark">Guardar mensaje</button>
+<p id="message-status" role="status">
+</p>
+</form>
+</dialog>
+</body>
+</html>

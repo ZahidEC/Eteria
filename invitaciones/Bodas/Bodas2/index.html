@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sofía y Mateo. Nuestra boda en Tulum: historia, evento y confirmación de asistencia.">
+  <title>Sofía & Mateo · Tulum</title>
+  <link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <!-- 01 · CABECERA -->
+  <header class="header">
+    <a href="#inicio" aria-label="Sofía y Mateo, inicio"><img src="assets/monograma.svg" class="logo" alt="S&M" width="65" height="45"></a>
+    <button id="menu-toggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"><span></span><span></span></button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a><a href="#historia">Nuestra historia</a><a href="#evento">Evento</a><a href="#vestimenta">Dress code</a><a href="#rsvp">RSVP</a><a href="#dedicatorias">Dedicatorias</a>
+    </nav>
+    <span class="language" aria-label="Idioma español">ES⌄</span>
+  </header>
+  <main>
+    <!-- 02 · PORTADA: fotos y datos en config.js -->
+    <section class="hero" id="inicio" aria-label="Nuestra boda">
+      <img id="hero-image" src="assets/images/portada.webp" alt="Novios frente al mar al atardecer" width="1536" height="1024" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Nos casamos</p>
+        <h1><span data-bride>Sofía</span><i>&</i><span data-groom>Mateo</span></h1>
+        <p class="wedding-date" data-date>14 . 09 . 2025</p>
+        <p class="city" data-city>Tulum, México</p>
+        <span class="hero-rule"></span>
+        <div class="countdown" aria-label="Cuenta regresiva a la boda">
+          <div><strong id="days">00</strong><span>Días</span></div>
+          <div><strong id="hours">00</strong><span>Horas</span></div>
+          <div><strong id="minutes">00</strong><span>Minutos</span></div>
+          <div><strong id="seconds">00</strong><span>Segundos</span></div>
+        </div>
+        <p id="date-note" class="date-note"></p>
+      </div>
+      <div class="hero-dots" aria-label="Elegir fotografía de portada"></div>
+      <a class="down" href="#historia" aria-label="Descubrir nuestra historia">⌄</a>
+    </section>
+    <!-- 03 · NUESTRA HISTORIA -->
+    <section class="section split history" id="historia">
+      <div class="section-intro">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>El inicio<br>
+de nuestro<br>
+siempre</h2>
+        <span class="short-rule"></span>
+        <p>Cada momento juntos<br>
+nos trajo hasta aquí.</p>
+      </div>
+      <div class="history-content">
+        <div class="timeline" id="timeline"></div>
+        <button class="button gallery-button" id="open-gallery">Ver más fotos</button>
+      </div>
+    </section>
+    <!-- 04 · EL EVENTO -->
+    <section class="section event" id="evento">
+      <div class="section-intro">
+        <p class="eyebrow">El evento</p>
+        <h2>Agenda<br>
+y detalles</h2>
+        <ul class="agenda" id="agenda"></ul>
+        <button class="button" id="calendar">Añadir al calendario</button>
+      </div>
+      <img class="venue-photo" src="assets/images/jardin.webp" alt="Sendero tropical con lámparas de mimbre" loading="lazy" width="1024" height="1280">
+      <div class="venue-info">
+        <p class="eyebrow">¿Dónde?</p>
+        <h3 id="venue-name">Zamna Tulum</h3>
+        <p id="venue-address">Carretera Tulum - Boca Paila<br>
+Km 5.5, Tulum, Quintana Roo.</p>
+        <div class="map-preview" aria-label="Mapa general de Tulum">
+          <iframe title="Mapa general de Tulum, ubicación exacta por confirmar" src="https://www.google.com/maps?q=Tulum%2C%20Quintana%20Roo&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a class="button" id="directions" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+      </div>
+    </section>
+    <!-- 05 · DRESS CODE: cada tarjeta usa un cuarto de la imagen de vestimenta -->
+    <section class="section split dress" id="vestimenta">
+      <div class="section-intro">
+        <p class="eyebrow">Dress code</p>
+        <h2>Código de<br>
+vestimenta</h2>
+        <p>Semi formal. Te compartimos<br class="desktop-break"> una guía visual para que te<br class="desktop-break"> sientas cómodo y en armonía<br class="desktop-break"> con la celebración.</p>
+        <button class="text-button" id="open-tips">Ver consejos</button>
+      </div>
+      <div class="dress-grid">
+        <article class="dress-card"><div class="fashion fashion-1" role="img" aria-label="Hombre con traje de lino claro"></div><h3>Él</h3><p>Lino o traje claro</p></article>
+        <article class="dress-card"><div class="fashion fashion-2" role="img" aria-label="Mujer con vestido largo verde oliva"></div><h3>Ella</h3><p>Vestidos largos<br>
+o midi</p></article>
+        <article class="dress-card"><div class="fashion fashion-3" role="img" aria-label="Hombre con camisa blanca y pantalón claro"></div><h3>Él</h3><p>Colores claros<br>
+y telas ligeras</p></article>
+        <article class="dress-card"><div class="fashion fashion-4" role="img" aria-label="Mujer con vestido rosa pastel"></div><h3>Ella</h3><p>Colores tierra<br>
+o pasteles</p></article>
+      </div>
+    </section>
+    <!-- 06 · CONFIRMACIÓN -->
+    <section class="section split rsvp" id="rsvp">
+      <div class="section-intro">
+        <p class="eyebrow">RSVP</p>
+        <h2>Confirma tu<br>
+asistencia</h2>
+        <p>Tu respuesta es muy importante<br>
+para nosotros.</p>
+        <p>Por favor confirma antes del<br>
+<span id="deadline">14 de agosto de 2025.</span></p>
+      </div>
+      <form id="rsvp-form">
+        <div class="form-column">
+          <label for="name">Nombre completo</label>
+          <input id="name" name="name" placeholder="Escribe tu nombre" autocomplete="name" maxlength="100" required>
+          <fieldset><legend>¿Asistirás?</legend>
+            <label class="choice"><input type="radio" name="attendance" value="Sí" required><span>Sí, no me lo pierdo</span></label>
+            <label class="choice"><input type="radio" name="attendance" value="No"><span>No podré asistir</span></label>
+          </fieldset>
+          <label for="companions">Número de acompañantes</label>
+          <select id="companions" name="companions"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        </div>
+        <div class="form-column">
+          <fieldset id="food"><legend>Preferencias alimentarias</legend>
+            <label class="choice"><input type="checkbox" name="food" value="Vegetariana"><span>Opción vegetariana</span></label>
+            <label class="choice"><input type="checkbox" name="food" value="Vegana"><span>Opción vegana</span></label>
+            <label class="choice"><input type="checkbox" name="food" value="Sin mariscos"><span>Sin mariscos</span></label>
+            <label class="choice"><input type="checkbox" name="food" value="Sin gluten"><span>Sin gluten</span></label>
+            <label class="choice"><input type="checkbox" name="food" value="Otra"><span>Otra / Especificar</span></label>
+            <input id="food-other" name="other" aria-label="Especificar preferencias" placeholder="Especifica aquí" maxlength="300">
+          </fieldset>
+          <button class="button dark" type="submit">Enviar confirmación</button>
+          <p class="form-note" id="form-note">Modo de muestra: se guarda solo en este navegador.</p>
+          <p class="status" id="rsvp-status" role="status"></p>
+        </div>
+      </form>
+    </section>
+    <!-- 07 · DEDICATORIAS -->
+    <section class="section split dedications" id="dedicatorias">
+      <div class="section-intro">
+        <p class="eyebrow">Dedicatorias</p>
+        <h2>Déjanos tu<br>
+mensaje</h2>
+        <p>Tu cariño y tus palabras<br>
+serán nuestro mejor regalo.</p>
+        <button class="button" id="open-message">Escribir mensaje</button>
+      </div>
+      <div class="messages" id="messages"></div>
+    </section>
+  </main>
+  <!-- 08 · PIE -->
+  <footer>
+    <a href="#inicio" aria-label="Volver al inicio"><img src="assets/monograma.svg" alt="S&M" width="65" height="45"></a>
+    <div class="footer-date"><p data-date>14 . 09 . 2025</p><span data-city>Tulum, México</span></div>
+    <div class="footer-links"><button data-info="instagram">Instagram</button><button data-info="spotify">Spotify</button><button data-info="gift">Nuestro regalo <span>·</span></button></div>
+  </footer>
+  <!-- 09 · VENTANAS: galería, consejos, mensaje e información -->
+  <dialog id="gallery-dialog" class="gallery-dialog"><button class="close" aria-label="Cerrar">×</button><img id="gallery-image" alt="Fotografía de nuestra historia"><div class="gallery-controls"><button id="gallery-prev" aria-label="Fotografía anterior">←</button><p id="gallery-caption"></p><button id="gallery-next" aria-label="Fotografía siguiente">→</button></div></dialog>
+  <dialog id="tips-dialog"><button class="close" aria-label="Cerrar">×</button><p class="eyebrow">Dress code</p><h2>Natural y elegante</h2><p>Elige lino, algodón o telas ligeras. Los tonos arena, oliva y pastel combinan con el entorno.</p><p>Para caminar en la playa, recomendamos zapatos cómodos o tacón ancho. Evita vestidos blancos, reservados para la novia.</p></dialog>
+  <dialog id="message-dialog"><button class="close" aria-label="Cerrar">×</button><p class="eyebrow">Dedicatorias</p><h2>Unas palabras para siempre</h2><form id="message-form"><label for="message-name">Tu nombre</label><input id="message-name" maxlength="80" required autocomplete="name"><label for="message-text">Tu mensaje</label><textarea id="message-text" rows="4" maxlength="500" required></textarea><p class="form-note">Visible solo en este navegador. Las tarjetas iniciales son ejemplos de la plantilla.</p><button class="button dark">Guardar mensaje</button><p id="message-status" role="status"></p></form></dialog>
+  <dialog id="info-dialog"><button class="close" aria-label="Cerrar">×</button><h2 id="info-title"></h2><p id="info-text"></p></dialog>
+</body>
+</html>

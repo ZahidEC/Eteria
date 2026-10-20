@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sofía y Mateo: nuestra boda en Ciudad de México. Historia, detalles, vestimenta, confirmación y firmas.">
+  <title>Sofía & Mateo · Noir</title>
+  <link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@400;500;600&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer>
+</script>
+  <script src="js/main.js" defer>
+</script>
+</head>
+<body>
+<a class="skip" href="#inicio">Saltar al contenido</a>
+<!-- 01 · CABECERA Y PORTADA -->
+<header class="header">
+  <a class="brand" href="#inicio" aria-label="Inicio">
+<span data-monogram>S & M</span>
+</a>
+  <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+<span>
+</span>
+<span>
+</span>
+</button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#inicio">Inicio</a>
+<a href="#historia">Nuestra historia</a>
+<a href="#detalles">Detalles</a>
+<a href="#vestimenta">Dress code</a>
+<a href="#rsvp">RSVP</a>
+<a href="#firmas">Firmas</a>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <img class="hero-image" src="assets/images/portada.webp" alt="Retrato de los novios sobre un fondo rojo oscuro" width="1672" height="940" fetchpriority="high">
+    <div class="hero-shade">
+</div>
+    <nav class="section-dots" aria-label="Secciones">
+<a class="active" href="#inicio" aria-label="01 Inicio">
+<span>
+</span>
+<b>01</b>
+</a>
+<a href="#historia" aria-label="02 Historia">
+<span>
+</span>
+</a>
+<a href="#detalles" aria-label="03 Detalles">
+<span>
+</span>
+</a>
+<a href="#vestimenta" aria-label="04 Vestimenta">
+<span>
+</span>
+</a>
+<a href="#rsvp" aria-label="05 Confirmación">
+<span>
+</span>
+</a>
+<a href="#firmas" aria-label="06 Firmas">
+<span>
+</span>
+</a>
+</nav>
+    <div class="hero-copy">
+      <p class="eyebrow">Nos casamos</p>
+      <h1>
+<span data-bride>Sofía</span> <i>&</i> <span data-groom>Mateo</span>
+</h1>
+      <div class="countdown" aria-label="Cuenta regresiva">
+        <div>
+<strong id="days">00</strong>
+<span>Días</span>
+</div>
+<div>
+<strong id="hours">00</strong>
+<span>Horas</span>
+</div>
+<div>
+<strong id="minutes">00</strong>
+<span>Minutos</span>
+</div>
+<div>
+<strong id="seconds">00</strong>
+<span>Segundos</span>
+</div>
+      </div>
+      <p class="event-date" data-date>12 de Octubre, 2025</p>
+      <p class="event-city" data-city>Ciudad de México</p>
+      <p id="countdown-note" class="countdown-note">
+</p>
+      <a class="down" href="#historia" aria-label="Ver nuestra historia">⌄</a>
+    </div>
+  </section>
+  <!-- 02 · HISTORIA: datos y fotos desde config.js -->
+  <section class="section split history" id="historia">
+    <div class="section-intro">
+<p class="number">02</p>
+<h2>Nuestra<br> historia</h2>
+<p>Cada momento<br> nos trajo hasta aquí.<br> Este es nuestro viaje.</p>
+<button class="text-button" id="open-gallery">Ver galería completa</button>
+</div>
+    <div class="timeline" id="timeline">
+</div>
+  </section>
+  <!-- 03 · DETALLES Y MAPA REAL -->
+  <section class="section details" id="detalles">
+    <div class="section-intro">
+<p class="number">03</p>
+<h2>Detalles<br> del evento</h2>
+      <ul class="event-list">
+        <li>
+<img src="assets/icons/calendar.svg" alt="">
+<div>
+<b>Fecha</b>
+<span data-date>12 de Octubre, 2025</span>
+</div>
+</li>
+        <li>
+<img src="assets/icons/clock.svg" alt="">
+<div>
+<b>Ceremonia</b>
+<span id="ceremony">5:00 PM</span>
+</div>
+</li>
+        <li>
+<img src="assets/icons/glass.svg" alt="">
+<div>
+<b>Recepción</b>
+<span id="reception">7:00 PM</span>
+</div>
+</li>
+        <li>
+<img src="assets/icons/pin.svg" alt="">
+<div>
+<b>Lugar</b>
+<span data-venue>Hacienda de los Morales</span>
+<span data-city>Ciudad de México</span>
+</div>
+</li>
+      </ul>
+      <a class="button" id="directions" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+    </div>
+    <div class="map">
+      <iframe id="map-frame" title="Ubicación del evento en Google Maps" src="https://www.google.com/maps?q=Hacienda+de+los+Morales+Ciudad+de+Mexico&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      <div class="map-card">
+<h3 data-venue>Hacienda de los Morales</h3>
+<p id="venue-address">
+</p>
+<a id="map-link" target="_blank" rel="noopener noreferrer">Ver en Google Maps <span>→</span>
+</a>
+</div>
+    </div>
+  </section>
+  <!-- 04 · VESTIMENTA: imágenes completas y galería ampliable -->
+  <section class="section split dress" id="vestimenta">
+    <div class="section-intro">
+<p class="number">04</p>
+<h2>Dress<br> code</h2>
+<p>
+<strong>Formal elegante</strong>
+<br> Te compartimos una guía<br> para que luzcas increíble<br> en nuestro gran día.</p>
+<button class="text-button" id="open-guide">Ver guía completa</button>
+</div>
+    <div class="dress-groups">
+      <div class="dress-group">
+<h3>Mujeres</h3>
+<div class="looks" id="women-looks">
+</div>
+<div class="swatches" aria-label="Colores sugeridos: verde, vino, rojo, ocre y arena">
+<span style="--swatch:#123c31">
+</span>
+<span style="--swatch:#530e12">
+</span>
+<span style="--swatch:#b52108">
+</span>
+<span style="--swatch:#ad7523">
+</span>
+<span style="--swatch:#bca17b">
+</span>
+</div>
+</div>
+      <div class="dress-group">
+<h3>Hombres</h3>
+<div class="looks" id="men-looks">
+</div>
+<div class="swatches" aria-label="Colores sugeridos: azul grisáceo, azul marino, gris oscuro y negro">
+<span style="--swatch:#2d4e5e">
+</span>
+<span style="--swatch:#0a263d">
+</span>
+<span style="--swatch:#1a1b19">
+</span>
+<span style="--swatch:#000">
+</span>
+</div>
+</div>
+    </div>
+  </section>
+  <!-- 05 · CONFIRMACIÓN: demo local o WhatsApp configurable -->
+  <section class="section split rsvp" id="rsvp">
+    <div class="section-intro">
+<p class="number">05</p>
+<h2>Confirma<br> tu asistencia</h2>
+<p>Tu presencia es lo más<br> importante para nosotros.<br> Por favor confirma antes del<br> <span id="deadline">12 de Septiembre, 2025.</span>
+</p>
+</div>
+    <form id="rsvp-form">
+      <div class="form-column">
+        <label for="guest-name">Nombre completo</label>
+<input id="guest-name" name="name" placeholder="Escribe tu nombre" autocomplete="name" maxlength="100" required>
+        <fieldset>
+<legend>¿Asistirás?</legend>
+<div class="attendance">
+<label class="choice">
+<input type="radio" name="attendance" value="Sí" required checked>
+<span>Sí, asistiré</span>
+</label>
+<label class="choice">
+<input type="radio" name="attendance" value="No">
+<span>No, lo siento</span>
+</label>
+</div>
+</fieldset>
+        <label for="companions">Número de acompañantes</label>
+<select name="companions" id="companions">
+<option>0</option>
+<option selected>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+        <button class="button submit" type="submit">Enviar confirmación</button>
+<p class="form-note" id="form-note">Modo de muestra: tu respuesta se guarda solo en este navegador.</p>
+<p id="rsvp-status" class="status" role="status">
+</p>
+      </div>
+      <fieldset class="food" id="food">
+<legend>Preferencias alimentarias</legend>
+<label class="choice">
+<input type="checkbox" name="food" value="Ninguna restricción" id="food-none">
+<span>Ninguna restricción</span>
+</label>
+<label class="choice">
+<input type="checkbox" name="food" value="Vegetariano(a)">
+<span>Vegetariano(a)</span>
+</label>
+<label class="choice">
+<input type="checkbox" name="food" value="Vegano(a)">
+<span>Vegano(a)</span>
+</label>
+<label class="choice">
+<input type="checkbox" name="food" value="Sin gluten">
+<span>Sin gluten</span>
+</label>
+<label class="choice">
+<input type="checkbox" name="food" value="Alergias alimentarias" id="allergy-check">
+<span>Alergias alimentarias</span>
+</label>
+<input id="allergy" name="allergy" aria-label="Especifica tu alergia" placeholder="Especifica tu alergia" maxlength="300">
+</fieldset>
+    </form>
+  </section>
+  <!-- 06 · MURO DE FIRMAS -->
+  <section class="section split signatures" id="firmas">
+    <div class="section-intro">
+<p class="number">06</p>
+<h2>Muro de<br> firmas</h2>
+<p>Déjanos tu mensaje y<br> sé parte de este recuerdo<br> inolvidable.</p>
+<button class="text-button" id="all-messages">Ver todos los mensajes</button>
+</div>
+    <div class="messages" id="messages">
+</div>
+  </section>
+</main>
+<footer>
+<a class="brand" href="#inicio">
+<span data-monogram>S & M</span>
+</a>
+<p>
+<span data-date>
+</span>
+<br>
+<span data-city>
+</span>
+</p>
+<div class="social">
+<span>Síguenos</span>
+<button data-social="instagram" aria-label="Instagram">◎</button>
+<button data-social="facebook" aria-label="Facebook">f</button>
+<button data-social="spotify" aria-label="Spotify">♫</button>
+</div>
+</footer>
+<!-- MODALES: galería, guía, firmas y enlaces -->
+<dialog id="gallery-dialog" class="gallery-dialog" aria-label="Galería de fotografías">
+<button class="close" aria-label="Cerrar galería">×</button>
+<div class="gallery-stage" id="gallery-stage">
+<img id="gallery-image" alt="">
+<div id="gallery-look" hidden>
+</div>
+</div>
+<div class="gallery-controls">
+<button id="gallery-prev" aria-label="Anterior">←</button>
+<p id="gallery-caption" aria-live="polite">
+</p>
+<button id="gallery-next" aria-label="Siguiente">→</button>
+</div>
+</dialog>
+<dialog id="guide-dialog">
+<button class="close" aria-label="Cerrar">×</button>
+<p class="number">Dress code</p>
+<h2>Formal elegante</h2>
+<p>Para ellas: vestidos largos o midi en verde, vino, rojo, ocre o tonos tierra. Reserva el blanco para la novia.</p>
+<p>Para ellos: traje oscuro o esmoquin, camisa formal y zapatos de vestir. Puedes elegir verde profundo, azul marino, gris o negro.</p>
+<button class="button" id="view-looks">Ver las seis referencias</button>
+</dialog>
+<dialog id="message-dialog">
+<button class="close" aria-label="Cerrar">×</button>
+<p class="number">Una firma para siempre</p>
+<h2>Déjanos tu mensaje</h2>
+<form id="message-form">
+<label for="message-name">Tu nombre</label>
+<input id="message-name" maxlength="80" autocomplete="name" required>
+<label for="message-text">Tu dedicatoria</label>
+<textarea id="message-text" rows="4" maxlength="500" required>
+</textarea>
+<p class="form-note">Se guarda en este dispositivo. Las firmas iniciales son ejemplos de la plantilla.</p>
+<button class="button">Guardar mensaje</button>
+<p id="message-status" role="status">
+</p>
+</form>
+</dialog>
+<dialog id="all-dialog" class="all-dialog">
+<button class="close" aria-label="Cerrar">×</button>
+<h2>Todos los mensajes</h2>
+<p class="form-note">Dedicatorias de ejemplo y mensajes guardados en este dispositivo.</p>
+<div id="all-messages-list">
+</div>
+<button class="button" id="write-message">Dejar mi mensaje</button>
+</dialog>
+<dialog id="info-dialog">
+<button class="close" aria-label="Cerrar">×</button>
+<h2 id="info-title">
+</h2>
+<p>Los novios compartirán este enlace próximamente.</p>
+</dialog>
+</body>
+</html>

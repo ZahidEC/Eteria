@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sofía y Mateo. Una boda a todo color: nuestra historia, agenda, ubicación y confirmación de asistencia.">
+  <title>Sofía & Mateo · A todo color</title>
+  <link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer>
+</script>
+  <script src="js/main.js" defer>
+</script>
+</head>
+<body>
+<a class="skip" href="#inicio">Saltar al contenido</a>
+<!-- 01 · NAVEGACIÓN Y PORTADA -->
+<header class="header">
+  <a href="#inicio" class="brand" aria-label="Inicio" data-monogram>S&M</a>
+  <button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menú">
+<span>
+</span>
+<span>
+</span>
+</button>
+  <nav id="navigation" aria-label="Navegación principal">
+<a href="#inicio">Inicio</a>
+<a href="#historia">Historia</a>
+<a href="#evento">Evento</a>
+<a href="#rsvp">RSVP</a>
+<a href="#mensajes">Mensajes</a>
+</nav>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-copy">
+      <h1>
+<span data-bride>Sofía</span>
+<span class="name-line">
+<i>&</i> <span data-groom>Mateo</span>
+</span>
+</h1>
+      <h2>Nos casamos</h2>
+<p class="hero-date" data-date>24 . 08 . 2025</p>
+      <p id="countdown-note">Falta menos para nuestro gran día</p>
+      <div class="countdown" aria-label="Cuenta regresiva">
+<div>
+<strong id="days">00</strong>
+<span>Días</span>
+</div>
+<div>
+<strong id="hours">00</strong>
+<span>Horas</span>
+</div>
+<div>
+<strong id="minutes">00</strong>
+<span>Minutos</span>
+</div>
+<div>
+<strong id="seconds">00</strong>
+<span>Segundos</span>
+</div>
+</div>
+    </div>
+    <img class="hero-image" src="assets/images/portada.webp" alt="Pareja con vestido coral y traje claro ante muros de colores" width="1122" height="1402" fetchpriority="high">
+  </section>
+  <!-- 02 · CINCO MOMENTOS DE NUESTRA HISTORIA -->
+  <section class="section split history" id="historia">
+    <div class="intro">
+<h2>Nuestra<br> historia</h2>
+<p>Cada momento<br> nos trajo hasta aquí.<br> Así comenzó<br> lo nuestro.</p>
+<button class="arrow-button" id="history-gallery" aria-label="Abrir galería de nuestra historia">→</button>
+</div>
+    <div class="timeline" id="timeline">
+</div>
+  </section>
+  <!-- 03 · AGENDA -->
+  <section class="section split agenda-section" id="evento">
+    <div class="intro">
+<h2>Agenda</h2>
+<p>Así será nuestro día<br> especial.</p>
+<a class="arrow-button" href="#ubicacion" aria-label="Ver ubicación">→</a>
+</div>
+    <div class="agenda" id="agenda">
+</div>
+  </section>
+  <!-- 04 · UBICACIÓN -->
+  <section class="location" id="ubicacion">
+    <div class="location-copy">
+<h2>Ubicación</h2>
+<p>
+<span data-venue>Hacienda San Rafael</span>
+<br>
+<span id="address">
+</span>
+</p>
+<a class="text-link" id="directions" target="_blank" rel="noopener noreferrer">Cómo llegar <span>→</span>
+</a>
+</div>
+    <div class="map">
+<iframe id="map-frame" title="Mapa general de Zapopan; confirma el recinto antes de viajar" src="https://www.google.com/maps?q=Zapopan+Jalisco&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+<article class="map-card">
+<img src="assets/images/hacienda.webp" alt="Hacienda de jardín tropical, imagen ilustrativa" width="1536" height="1024" loading="lazy">
+<div>
+<h3 data-venue>Hacienda San Rafael</h3>
+<p id="card-address">
+</p>
+<a class="text-link" id="map-link" target="_blank" rel="noopener noreferrer">Ver en mapa <span>→</span>
+</a>
+</div>
+</article>
+</div>
+  </section>
+  <!-- 05 · VESTIMENTA Y RSVP EN DOS BLOQUES DE COLOR -->
+  <div class="dress-rsvp">
+    <section class="dress" id="vestimenta">
+<h2>Código de vestimenta</h2>
+<div class="dress-grid">
+      <article class="dress-card">
+<div class="dress-description">
+<h3>Mujeres</h3>
+<span class="small-rule">
+</span>
+<p>Vestido largo formal. Colores vibrantes bienvenidos.</p>
+</div>
+<button class="dress-photo" data-look="0" aria-label="Ampliar referencia de vestido" aria-haspopup="dialog">
+<img src="assets/images/vestido.webp" alt="Vestido largo rosa fucsia" loading="lazy" width="1086" height="1448">
+</button>
+<div class="swatches" aria-label="Colores: rosa, naranja, ocre, verde y azul">
+<span style="--swatch:#ed3783">
+</span>
+<span style="--swatch:#fa4a08">
+</span>
+<span style="--swatch:#eea900">
+</span>
+<span style="--swatch:#078350">
+</span>
+<span style="--swatch:#003b82">
+</span>
+<span style="--swatch:#002448">
+</span>
+</div>
+</article>
+      <article class="dress-card">
+<div class="dress-description">
+<h3>Hombres</h3>
+<span class="small-rule">
+</span>
+<p>Traje formal. Evitar colores claros.</p>
+</div>
+<button class="dress-photo" data-look="1" aria-label="Ampliar referencia de traje" aria-haspopup="dialog">
+<img src="assets/images/traje.webp" alt="Traje formal azul marino" loading="lazy" width="1086" height="1448">
+</button>
+<div class="swatches" aria-label="Colores: azul, verde, gris y beige">
+<span style="--swatch:#00336d">
+</span>
+<span style="--swatch:#005236">
+</span>
+<span style="--swatch:#7c7f78">
+</span>
+<span style="--swatch:#d8d0bc">
+</span>
+</div>
+</article>
+    </div>
+</section>
+    <section class="rsvp" id="rsvp">
+<h2>Confirma tu asistencia</h2>
+<p>Tu presencia es muy importante para nosotros.</p>
+      <form id="rsvp-form">
+        <label for="guest-name">Nombre completo <em>*</em>
+</label>
+<input name="name" id="guest-name" placeholder="Escribe tu nombre" required maxlength="100" autocomplete="name">
+        <div class="form-row">
+<fieldset>
+<legend>¿Asistirás? <em>*</em>
+</legend>
+<div class="attendance">
+<label class="choice">
+<input type="radio" name="attendance" value="Sí" required>
+<span>Sí, estaré ahí</span>
+</label>
+<label class="choice">
+<input type="radio" name="attendance" value="No">
+<span>No podré asistir</span>
+</label>
+</div>
+</fieldset>
+<div>
+<label for="companions">Número de acompañantes</label>
+<select name="companions" id="companions">
+<option>0</option>
+<option selected>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select>
+</div>
+</div>
+        <fieldset id="meal-options">
+<legend>Preferencia de alimentos <em>*</em>
+</legend>
+<div class="meals">
+<label class="choice">
+<input type="radio" name="meal" value="Carne" required>
+<span>Carne</span>
+</label>
+<label class="choice">
+<input type="radio" name="meal" value="Pescado">
+<span>Pescado</span>
+</label>
+<label class="choice">
+<input type="radio" name="meal" value="Vegetariano">
+<span>Vegetariano</span>
+</label>
+<label class="choice">
+<input type="radio" name="meal" value="Vegano">
+<span>Vegano</span>
+</label>
+</div>
+</fieldset>
+        <label for="allergy">¿Alguna alergia o restricción alimentaria?</label>
+<input name="allergy" id="allergy" placeholder="Cuéntanos aquí" maxlength="300">
+        <button class="button" type="submit">Enviar confirmación</button>
+<p class="form-note" id="form-note">Demostración: se guarda únicamente en este navegador.</p>
+<p id="rsvp-status" role="status">
+</p>
+      </form>
+    </section>
+  </div>
+  <!-- 06 · MURO DE FOTOS Y DEDICATORIAS -->
+  <section class="wall section" id="mensajes">
+<div class="wall-heading">
+<div>
+<h2>Muro de firmas y dedicatorias</h2>
+<p>Déjanos tu mensaje y tus mejores deseos.</p>
+</div>
+<button class="arrow-button" id="open-message" aria-label="Escribir una dedicatoria">→</button>
+</div>
+<div class="wall-grid" id="wall-grid">
+</div>
+<p class="wall-note">Dedicatorias de ejemplo y mensajes guardados en este dispositivo.</p>
+</section>
+</main>
+<footer>
+<p>
+<span data-bride>Sofía</span> & <span data-groom>Mateo</span>
+</p>
+<p data-date>24 . 08 . 2025</p>
+<p>Gracias por ser parte de nuestra historia. <span>♥</span>
+</p>
+</footer>
+<!-- VENTANAS ACCESIBLES -->
+<dialog id="gallery-dialog" class="gallery-dialog" aria-label="Galería de fotos">
+<button class="close" aria-label="Cerrar galería">×</button>
+<div class="gallery-stage" id="gallery-stage">
+<img id="gallery-image" alt="">
+</div>
+<div class="gallery-controls">
+<button id="gallery-prev" aria-label="Foto anterior">←</button>
+<p id="gallery-caption" aria-live="polite">
+</p>
+<button id="gallery-next" aria-label="Foto siguiente">→</button>
+</div>
+</dialog>
+<dialog id="message-dialog">
+<button class="close" aria-label="Cerrar">×</button>
+<h2>Con mucho cariño</h2>
+<p>Escribe unas palabras para los novios.</p>
+<form id="message-form">
+<label for="message-name">Tu nombre</label>
+<input id="message-name" maxlength="80" required autocomplete="name">
+<label for="message-text">Tu dedicatoria</label>
+<textarea id="message-text" rows="4" maxlength="500" required>
+</textarea>
+<p class="form-note">Tu mensaje se guardará solo en este navegador.</p>
+<button class="button">Guardar dedicatoria</button>
+<p id="message-status" role="status">
+</p>
+</form>
+</dialog>
+</body>
+</html>
