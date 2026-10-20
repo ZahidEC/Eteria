@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111c36">
+  <meta name="description" content="Una misión muy especial: celebrar entre planetas, juegos y estrellas. Invitación infantil editable.">
+  <title>Aventura espacial</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <!-- 01 · NAVEGACIÓN -->
+  <header class="header">
+    <a href="#inicio" class="brand"><span class="brand-icon" aria-hidden="true">✦</span> CLUB<br>ESPACIAL</a>
+    <button id="menu" class="menu" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#mision">La misión</a><a href="#plan">Plan de vuelo</a><a href="#equipaje">Qué llevar</a><a class="nav-cta" href="#rsvp">¡Voy a bordo! ↗</a>
+    </nav>
+  </header>
+  <main>
+    <!-- 02 · PORTADA / DESPEGUE -->
+    <section class="hero" id="inicio">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> ATENCIÓN, PEQUEÑOS EXPLORADORES</span>
+        <h1>¡Una fiesta<br>de otro <span>planeta!</span></h1>
+        <p class="hero-sub"><strong data-name>Leo</strong> cumple <strong data-age>6</strong> años y tú eres parte de su tripulación.</p>
+        <button class="button coral" id="launch">¡Comenzar la aventura! <span aria-hidden="true">↗</span></button>
+        <p class="hero-meta"><span data-date></span><span>·</span><span data-time></span></p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/images/espacio.webp" width="1536" height="1024" alt="Astronauta de juguete, cohete y planetas en una aventura espacial ilustrada" fetchpriority="high">
+        <div class="age-badge"><small>MISIÓN</small><strong><span data-age>6</span></strong><span>VUELTAS AL SOL</span></div>
+        <span class="orbit-label">PRÓXIMO DESTINO: ¡MI CUMPLE!</span>
+      </div>
+      <a href="#mision" class="scroll-note">EXPLORA LA MISIÓN <span>↓</span></a>
+    </section>
+    <div class="ticker" aria-hidden="true"><span>PEQUEÑOS ASTRONAUTAS</span> ✦ <span>GRANDES AVENTURAS</span> ✦ <span>UN CUMPLE FUERA DE ÓRBITA</span> ✦</div>
+    <!-- 03 · PASE DE ABORDAR -->
+    <section class="section mission" id="mision">
+      <div class="section-copy"><span class="eyebrow dark">01 / TU PRÓXIMA AVENTURA</span><h2>Tenemos una misión.<br><em>¡Celebrar juntos!</em></h2><p>Prepara tu imaginación. Nos esperan juegos, risas y un universo de sorpresas. Solo falta alguien muy especial a bordo: tú.</p><span class="hand-note">Reservamos un lugar para ti ↗</span></div>
+      <article class="ticket">
+        <div class="ticket-top"><span>PASE DE ABORDAR</span><span>✦ LE<span data-age>6</span></span></div>
+        <h3>Destino: cumpleaños<br>de <span data-name>Leo</span></h3>
+        <div class="ticket-grid"><div><small>FECHA DE DESPEGUE</small><strong data-date></strong></div><div><small>HORARIO TERRESTRE</small><strong data-hours></strong></div></div>
+        <div class="ticket-place"><small>BASE DE LANZAMIENTO</small><strong data-venue></strong><p data-address></p></div>
+        <div class="ticket-actions"><a id="map" class="text-link" hidden target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a><span id="map-pending">Ubicación por confirmar</span><button class="text-link" id="calendar">Guardar fecha +</button></div>
+        <div class="ticket-bottom"><span class="barcode" aria-hidden="true"></span><span>TRIPULACIÓN: FAMILIA Y AMIGOS<br>ACCESO: MUCHAS GANAS DE JUGAR</span></div>
+      </article>
+    </section>
+    <!-- 04 · CUENTA REGRESIVA -->
+    <section class="count-section"><span class="eyebrow">PREPARANDO MOTORES</span><h2>El despegue comienza en...</h2><div class="countdown" aria-label="Cuenta regresiva"><div><strong id="days">00</strong><span>DÍAS</span></div><b>:</b><div><strong id="hours">00</strong><span>HORAS</span></div><b>:</b><div><strong id="minutes">00</strong><span>MINUTOS</span></div><b>:</b><div><strong id="seconds">00</strong><span>SEGUNDOS</span></div></div><p id="count-note">¡Ya casi nos vemos entre las estrellas!</p></section>
+    <!-- 05 · ITINERARIO -->
+    <section class="section flight" id="plan"><div class="section-heading"><div><span class="eyebrow dark">02 / BITÁCORA DE LA FIESTA</span><h2>Nuestro plan de vuelo</h2></div><p>Una tarde para explorar,<br>jugar y pedir un gran deseo.</p></div><div id="agenda" class="agenda"></div></section>
+    <!-- 06 · INDICACIONES -->
+    <section class="section packing" id="equipaje"><div class="planet-decoration" aria-hidden="true">🪐</div><div><span class="eyebrow dark">03 / LISTOS PARA LA MISIÓN</span><h2>En tu mochila espacial</h2><div class="packing-grid"><article><span>01</span><h3>Comodidad al infinito</h3><p>Ropa cómoda y tenis para jugar. ¡Un detalle espacial es bienvenido!</p></article><article><span>02</span><h3>Tu copiloto favorito</h3><p>Los pequeños exploradores deben venir acompañados de un adulto durante la fiesta.</p></article><article><span>03</span><h3>Cuéntanos lo importante</h3><p>Al confirmar, avísanos si hay alguna alergia alimentaria o algo que debamos considerar.</p></article></div></div></section>
+    <!-- 07 · GALERÍA OPCIONAL: aparece al añadir fotos en config.js -->
+    <section class="section" id="memories" hidden><span class="eyebrow dark">MI UNIVERSO EN IMÁGENES</span><h2>Pequeñas grandes aventuras</h2><p>Toca una foto para verla completa.</p><div id="gallery" class="gallery"></div></section>
+    <!-- 08 · REGALOS -->
+    <section class="gift section"><span class="gift-icon" aria-hidden="true">✧</span><div><span class="eyebrow dark">EL MEJOR REGALO ES QUE VENGAS</span><h2>Tu compañía vale<br>más que mil estrellas.</h2><p>No necesitas traer nada para ser parte de esta aventura. Si quieres tener un detalle, aquí hay algunas ideas.</p><button class="text-link" id="gift-open">Ver ideas de regalos ↗</button></div></section>
+    <!-- 09 · CONFIRMACIÓN -->
+    <section class="section rsvp" id="rsvp"><div><span class="eyebrow">04 / CONFIRMA TU LUGAR</span><h2>¿Te unes a<br>la <em>tripulación?</em></h2><p>Confirma antes del <strong data-deadline></strong> para preparar una misión increíble para todos.</p><div class="crew-stamp"><span>✦</span><p>TE ESPERAMOS,<br>EXPLORADOR</p></div></div>
+      <form id="rsvp-form">
+        <label for="adult">Nombre del adulto responsable</label><input id="adult" name="adult" required autocomplete="name" maxlength="100" placeholder="¿Quién nos acompaña?">
+        <label for="attendance">¿Se unen a la aventura?</label><select id="attendance" name="attendance"><option value="Sí">¡Sí, vamos a bordo!</option><option value="No">Esta vez no podremos asistir</option></select>
+        <div class="form-row"><div><label for="adults">Adultos (incluyéndote)</label><input id="adults" name="adults" type="number" min="1" max="10" value="1" required></div><div><label for="children">Niños</label><input id="children" name="children" type="number" min="0" max="10" value="1" required></div></div>
+        <label for="notes">Alergias o algún detalle importante <small>(opcional)</small></label><textarea id="notes" name="notes" rows="3" maxlength="500" placeholder="Cuéntanos lo que debamos saber"></textarea>
+        <button class="button coral" type="submit">Confirmar mi tripulación ↗</button><p class="form-note" id="form-note">Modo de muestra: tu respuesta se guarda en este navegador; no se envía al anfitrión.</p><p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#inicio">Hasta el infinito...<br><span>¡y hasta mi cumple!</span></a><p>Con cariño, <span data-name>Leo</span> y su familia ✦</p><div class="footer-bottom"><span>INVITACIÓN DE EJEMPLO · DATOS EDITABLES</span><button id="effects" aria-pressed="false">Pausar efectos</button></div></footer>
+  <!-- MODALES -->
+  <dialog id="launch-dialog" class="launch-dialog" aria-labelledby="launch-title"><button class="close" aria-label="Cerrar">×</button><div id="rocket" aria-hidden="true">🚀</div><span class="eyebrow">CONTROL DE MISIÓN</span><h2 id="launch-title">¡Tripulación lista!</h2><p id="launch-count" role="status" aria-live="polite">3… 2… 1…</p><button class="button coral" id="board">Ver mi pase de abordar ↗</button></dialog>
+  <dialog id="gift-dialog" aria-labelledby="gift-title"><button class="close" aria-label="Cerrar">×</button><span class="eyebrow dark">DETALLES CON CARIÑO</span><h2 id="gift-title">Un universo de ideas</h2><p id="gift-ideas"></p><a id="gift-link" class="button coral" hidden target="_blank" rel="noopener noreferrer">Ver mesa de regalos ↗</a></dialog>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-caption"><button class="close" aria-label="Cerrar">×</button><img id="photo" alt=""><p id="photo-caption"></p><div class="photo-controls"><button id="prev" aria-label="Foto anterior">←</button><button id="next" aria-label="Foto siguiente">→</button></div></dialog>
+</body>
+</html>

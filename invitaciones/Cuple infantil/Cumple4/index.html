@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#247aba">
+  <meta name="description" content="Una fiesta de Bluey para jugar, imaginar y celebrar. Invitación infantil interactiva de muestra.">
+  <title>Un día para jugar · Nico cumple 6</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <!-- 01 · CABECERA: un club de juegos -->
+  <header class="header wrap">
+    <a class="brand" href="#inicio"><span class="brand-paw" aria-hidden="true">✿</span><span>CLUB DE<br>LOS DÍAS FELICES</span></a>
+    <button id="menu" class="menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" aria-label="Principal"><a href="#fiesta">La fiesta</a><a href="#juego">¡A jugar!</a><a href="#memories">Mi álbum</a><a class="nav-cta" href="#rsvp">¡Yo voy! ↗</a></nav>
+  </header>
+  <main class="wrap">
+    <!-- 02 · PRIMERA VIÑETA -->
+    <section class="hero comic" id="inicio">
+      <div class="hero-top"><span>EPISODIO ESPECIAL</span><span>BLUEY + BINGO + TÚ</span></div>
+      <div class="hero-layout">
+        <div class="hero-copy"><p class="eyebrow">HOY TOCA CELEBRAR A LO GRANDE</p><h1>Este juego<br>se llama…<br><span>¡mi cumple!</span></h1><p><strong data-name>Nico</strong> cumple <strong data-age>6</strong> años.<br>Y la aventura empieza contigo.</p><a class="button orange" href="#rsvp">¡Me apunto al equipo! <span>↗</span></a><p class="tiny">Un día para jugar, imaginar y estar juntos.</p></div>
+        <div class="hero-picture"><img src="assets/images/bluey-jardin.webp" width="1536" height="1024" alt="Bluey y Bingo jugando con un globo rojo en el jardín" fetchpriority="high"><div class="speech">¿Listos para<br><strong>jugar?</strong></div><div class="age-sticker"><span>¡YA SON</span><strong data-age>6</strong><span>AÑAZOS!</span></div></div>
+      </div>
+      <div class="hero-bottom"><span>✦ <span data-date></span></span><span>✦ <span data-time></span></span><button id="dance" aria-pressed="false">♫ Activar modo baile</button></div>
+    </section>
+    <!-- 03 · DATOS PRÁCTICOS -->
+    <section class="details" id="fiesta">
+      <div class="details-title"><span class="section-number">01</span><h2>Plan del día:<br><em>pasarla increíble.</em></h2><p>No necesitas superpoderes.<br>Solo venir con ganas de divertirte.</p></div>
+      <article class="event-card comic"><span class="label">APÚNTALO EN EL REFRI</span><h3>¡Nos vemos aquí!</h3><dl><div><dt>CUÁNDO</dt><dd data-date></dd></div><div><dt>A QUÉ HORA</dt><dd data-hours></dd></div><div><dt>DÓNDE</dt><dd data-venue></dd><dd class="address" data-address></dd></div></dl><div class="event-actions"><a id="map" class="button small blue" hidden target="_blank" rel="noopener noreferrer">Ver mapa ↗</a><span id="map-pending">Dirección por confirmar</span><button id="calendar" class="text-link">Guardar en mi calendario +</button></div><span class="tape" aria-hidden="true"></span></article>
+    </section>
+    <!-- 04 · CONTADOR EN UNA TIRA DE VIÑETAS -->
+    <section class="count-strip comic"><div><span class="label">¿CUÁNTO FALTA?</span><h2>¡Casi es<br>el gran día!</h2></div><div class="countdown" aria-label="Cuenta regresiva"><div><strong id="days">00</strong><span>DÍAS</span></div><div><strong id="hours">00</strong><span>HORAS</span></div><div><strong id="minutes">00</strong><span>MINUTOS</span></div><div><strong id="seconds">00</strong><span>SEGUNDOS</span></div></div><p id="count-note">¡La emoción no cabe en una viñeta!</p></section>
+    <!-- 05 · MINIJUEGO -->
+    <section class="game comic" id="juego">
+      <div class="game-copy"><span class="section-number">02</span><p class="eyebrow">UN CALENTAMIENTO ANTES DE LA FIESTA</p><h2>¡Que no caiga<br><em>el globo!</em></h2><p>Toca el globo cinco veces para ganar tu insignia de compañero de juegos.</p><div class="score" id="game-score" role="status" aria-live="polite">0 / 5 toques</div><button id="reset-game" class="text-link">Volver a jugar ↻</button><p class="tiny">También puedes jugar con Tab y Enter.</p></div>
+      <div class="playground"><span class="cloud cloud-one" aria-hidden="true"></span><span class="cloud cloud-two" aria-hidden="true"></span><button id="balloon" aria-label="Dar un toque al globo"><span class="balloon-shape"></span><span class="balloon-string"></span></button><div class="game-ground" aria-hidden="true"><span>✿</span><span>✿</span><span>✿</span></div><div class="game-badge" id="game-badge" hidden>★<br>COMPAÑERO<br>DE JUEGOS</div></div>
+    </section>
+    <!-- 06 · AGENDA -->
+    <section class="schedule"><div class="section-heading"><div><span class="section-number">03</span><h2>Un día con<br><em>muchas historias.</em></h2></div><p>El orden de las aventuras.<br>¡La imaginación la ponemos entre todos!</p></div><div class="agenda" id="agenda"></div></section>
+    <!-- 07 · GALERÍA CON FOTOS FICTICIAS -->
+    <section class="album comic" id="memories"><div class="section-heading"><div><span class="label">EL PROTAGONISTA DEL EPISODIO</span><h2>¡Hola, soy <span data-name>Nico</span>!</h2></div><p>Me gusta jugar, reír y compartir.<br>¡Quiero celebrar contigo!</p></div><div id="gallery" class="gallery"></div><p class="sample-note">Niño ficticio · Fotografías de ejemplo generadas con IA. Toca una foto para ampliarla.</p></section>
+    <!-- 08 · INDICACIONES Y REGALOS -->
+    <section class="notes"><article class="comic packing"><span class="label">NOTA PARA LAS FAMILIAS</span><h2>Para jugar<br>sin preocupaciones</h2><ul><li>Ropa cómoda y tenis para moverse.</li><li>Los niños deben venir acompañados por un adulto durante la fiesta.</li><li>Avísanos de alergias alimentarias al confirmar.</li></ul></article><article class="comic gift"><span class="label">EL MEJOR REGALO</span><h2>Un amigo más.<br><em>Un juego mejor.</em></h2><p>Tu compañía es lo que más ilusión nos hace. Si quieres tener un detalle, dejamos algunas ideas.</p><button id="gift-open" class="button small cream">Ver ideas de regalos ↗</button><span class="gift-doodle" aria-hidden="true">✦</span></article></section>
+    <!-- 09 · RSVP -->
+    <section class="rsvp comic" id="rsvp"><div class="rsvp-copy"><span class="section-number">04</span><p class="eyebrow">SOLO FALTAS TÚ</p><h2>¿Jugamos<br><em>juntos?</em></h2><p>Confirma antes del <strong data-deadline></strong> para preparar un día genial.</p><div class="yes-sticker" aria-hidden="true">¡SÍ,<br>YO VOY!</div></div><form id="rsvp-form"><label for="adult">Nombre del adulto responsable</label><input id="adult" name="adult" required maxlength="100" autocomplete="name" placeholder="¿Quién nos acompaña?"><label for="attendance">¿Vienen a la fiesta?</label><select id="attendance" name="attendance"><option value="Sí">¡Sí, listos para jugar!</option><option value="No">Esta vez no podremos ir</option></select><div class="form-row"><div><label for="adults">Adultos (incluyéndote)</label><input id="adults" name="adults" type="number" min="1" max="10" value="1" required></div><div><label for="children">Niños</label><input id="children" name="children" type="number" min="0" max="10" value="1" required></div></div><label for="notes">Alergias u otros detalles <small>(opcional)</small></label><textarea id="notes" name="notes" rows="3" maxlength="500" placeholder="Algo que debamos saber…"></textarea><button class="button blue" type="submit">¡Confirmar mi equipo! ↗</button><p class="form-note" id="form-note">Muestra: tu respuesta se guarda solo en este navegador. No se envía al anfitrión.</p><p id="form-status" role="status"></p></form></section>
+  </main>
+  <footer class="wrap"><p>Los mejores días<br><strong>son los que jugamos juntos.</strong></p><span>Con cariño, <span data-name>Nico</span> y su familia.</span><div class="footer-bottom"><span>INVITACIÓN DE MUESTRA · DATOS EDITABLES</span><button id="effects" aria-pressed="false">Pausar efectos</button></div></footer>
+  <dialog id="gift-dialog" aria-labelledby="gift-title"><button class="close" aria-label="Cerrar">×</button><span class="label">DETALLES CON CARIÑO</span><h2 id="gift-title">Ideas para imaginar</h2><p id="gift-ideas"></p><a id="gift-link" class="button blue" hidden target="_blank" rel="noopener noreferrer">Ver mesa de regalos ↗</a></dialog>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-caption"><button class="close" aria-label="Cerrar">×</button><img id="photo" alt=""><p id="photo-caption"></p><div class="photo-controls"><button id="prev" aria-label="Foto anterior">←</button><button id="next" aria-label="Foto siguiente">→</button></div></dialog>
+</body>
+</html>

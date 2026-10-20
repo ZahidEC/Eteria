@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#105aa0">
+  <meta name="description" content="Una fiesta tropical de Stitch con olas, flores, travesuras y mucho color. Invitación infantil editable.">
+  <title>Fiesta Ohana · Stitch</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <!-- 01 · NAVEGACIÓN -->
+  <header class="header">
+    <a href="#inicio" class="brand"><span class="brand-icon" aria-hidden="true">✦</span> FIESTA<br>OHANA</a>
+    <button id="menu" class="menu" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#mision">La fiesta</a><a href="#plan">El plan</a><a href="#equipaje">Modo isla</a><a class="nav-cta" href="#rsvp">¡Voy a la fiesta! ↗</a>
+    </nav>
+  </header>
+  <main>
+    <!-- 02 · PORTADA / ALOHA -->
+    <section class="hero" id="inicio">
+      <div class="tropical-decor" aria-hidden="true"><span>✺</span><span>✿</span><span>✦</span></div>
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> STITCH, TRAVESURAS Y MUCHO ALOHA</span>
+        <h1>¡Aloha!<br>Se arma la <span>fiesta.</span></h1>
+        <p class="hero-sub"><strong data-name>Mateo</strong> cumple <strong data-age>6</strong> años y quiere celebrar con toda su Ohana.</p>
+        <button class="button coral" id="launch">¡Destapa la sorpresa! <span aria-hidden="true">↗</span></button>
+        <p class="hero-meta"><span data-date></span><span>·</span><span data-time></span></p>
+      </div>
+      <div class="hero-art"><button id="birthday-portrait" class="birthday-portrait" aria-label="Ampliar foto de ejemplo del festejado"><img src="assets/images/nino-portada.webp" alt="Retrato de un niño ficticio con camisa tropical, generado con IA"><span>¡EL FESTEJADO! ✦</span></button><span class="aloha-sticker" aria-hidden="true">100%<br>ALOHA</span>
+        <div class="stitch-scene"><img class="tropical-backdrop" src="assets/images/tropical.webp" width="1536" height="1024" alt="Olas turquesa, flores hawaianas y tabla de surf en una isla tropical" fetchpriority="high"><img id="stitch-character" class="stitch-character" src="https://clipart-library.com/2023/44-447268_edeka-stitch-png.png" alt="Stitch, el personaje azul de Lilo y Stitch" referrerpolicy="no-referrer"><span id="character-note" class="character-note" hidden>No se pudo cargar Stitch. Puedes añadir su imagen local en config.js.</span></div>
+        <div class="age-badge"><small>CUMPLO</small><strong><span data-age>6</span></strong><span>AÑOS DE TRAVESURAS</span></div>
+        <span class="orbit-label">SOL + OLAS + MI PERSONA FAVORITA: TÚ</span>
+      </div>
+      <a href="#mision" class="scroll-note">SIGUE LA OLA <span>↓</span></a>
+    </section>
+    <div class="ticker" aria-hidden="true"><span>OHANA ES FAMILIA</span> ✦ <span>MUCHAS TRAVESURAS</span> ✦ <span>UN CUMPLE CON ALOHA</span> ✦</div>
+    <!-- 03 · ALOHA PASS · ACCESO A LA FIESTA -->
+    <section class="section mission" id="mision">
+      <div class="section-copy"><span class="eyebrow dark">01 / PASE DIRECTO A LA DIVERSIÓN</span><h2>La mejor fiesta<br><em>es con mi Ohana.</em></h2><p>Un poquito de sol, un montón de risas y alguna que otra travesura. ¡Tenemos la receta para una tarde increíble! Ven a celebrar conmigo al estilo de Stitch.</p><span class="hand-note">¡Sin ti no está completa la isla! ↗</span></div>
+      <article class="ticket">
+        <div class="ticket-top"><span>ALOHA PASS · ACCESO A LA FIESTA</span><span>OHANA / <span data-age>6</span></span></div>
+        <h3>Cumple tropical<br>de <span data-name>Mateo</span></h3>
+        <div class="ticket-grid"><div><small>DÍA DE LA FIESTA</small><strong data-date></strong></div><div><small>DE PRINCIPIO A FIN</small><strong data-hours></strong></div></div>
+        <div class="ticket-place"><small>NOS VEMOS EN</small><strong data-venue></strong><p data-address></p></div>
+        <div class="ticket-actions"><a id="map" class="text-link" hidden target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a><span id="map-pending">Ubicación por confirmar</span><button class="text-link" id="calendar">Guardar fecha +</button></div>
+        <div class="ticket-bottom"><span class="barcode" aria-hidden="true"></span><span>EQUIPO: MI OHANA<br>ACTITUD: GANAS DE PASARLA GENIAL</span></div>
+      </article>
+    </section>
+    <!-- 04 · CUENTA REGRESIVA -->
+    <section class="count-section"><img class="stitch-decoration countdown-stitch" data-character alt="Stitch acompaña la cuenta regresiva" loading="lazy"><span class="eyebrow">ACTIVANDO EL MODO FIESTA</span><h2>La diversión está en camino</h2><div class="countdown" aria-label="Cuenta regresiva"><div><strong id="days">00</strong><span>DÍAS</span></div><b>:</b><div><strong id="hours">00</strong><span>HORAS</span></div><b>:</b><div><strong id="minutes">00</strong><span>MINUTOS</span></div><b>:</b><div><strong id="seconds">00</strong><span>SEGUNDOS</span></div></div><p id="count-note">¡Cada segundo trae una nueva ola de emoción!</p></section>
+    <!-- 05 · ITINERARIO -->
+    <section class="section flight" id="plan"><div class="section-heading"><div><span class="eyebrow dark">02 / CERO ABURRIMIENTO</span><h2>El plan está buenísimo</h2></div><p>De la primera sonrisa<br>a la última travesura.</p></div><div id="agenda" class="agenda"></div></section>
+    <!-- 06 · INDICACIONES -->
+    <section class="section packing" id="equipaje"><div class="planet-decoration" aria-hidden="true">🌺</div><div><span class="eyebrow dark">03 / TODO LISTO PARA LA ISLA</span><h2>Activa tu modo tropical</h2><div class="packing-grid"><article><span>01</span><h3>Mucho color, cero complicaciones</h3><p>Ropa cómoda y tenis para jugar. Flores, colores tropicales o tu camiseta favorita de Stitch.</p></article><article><span>02</span><h3>Trae a tu Ohana</h3><p>Los pequeños invitados deben venir acompañados de un adulto durante la fiesta.</p></article><article><span>03</span><h3>Cuéntanos lo importante</h3><p>Al confirmar, avísanos si hay alguna alergia alimentaria o algo que debamos considerar.</p></article></div></div></section>
+    <!-- 07 · GALERÍA OPCIONAL: aparece al añadir fotos en config.js -->
+    <section class="section" id="memories" hidden><span class="eyebrow dark">MI ÁLBUM DE TRAVESURAS</span><h2>Recuerdos con mucho aloha</h2><p>Toca una foto para verla completa.</p><p class="sample-photo-note">Niño ficticio · Fotografías de ejemplo generadas con IA.</p><div id="gallery" class="gallery"></div></section>
+    <!-- 08 · REGALOS -->
+    <section class="gift section"><div class="gift-character"><span class="gift-icon" aria-hidden="true">✧</span><img class="stitch-decoration gift-stitch" data-character alt="Stitch junto a los regalos" loading="lazy"></div><div><span class="eyebrow dark">EL MEJOR REGALO ES QUE VENGAS</span><h2>El mejor regalo:<br>¡tenerte en mi Ohana!</h2><p>No necesitas traer nada para ser parte de esta fiesta. Si quieres tener un detalle, aquí hay algunas ideas.</p><button class="text-link" id="gift-open">Ver ideas de regalos ↗</button></div></section>
+    <!-- 09 · CONFIRMACIÓN -->
+    <section class="section rsvp" id="rsvp"><div><span class="eyebrow">04 / CONFIRMA TU LUGAR</span><h2>¿Te apuntas<br>a la <em>travesura?</em></h2><p>Confirma antes del <strong data-deadline></strong> para preparar una fiesta increíble para todos.</p><div class="crew-stamp"><span>✦</span><p>OHANA<br>TE ESPERAMOS</p></div></div>
+      <form id="rsvp-form">
+        <label for="adult">Nombre del adulto responsable</label><input id="adult" name="adult" required autocomplete="name" maxlength="100" placeholder="¿Quién nos acompaña?">
+        <label for="attendance">¿Vienen a la fiesta?</label><select id="attendance" name="attendance"><option value="Sí">¡Sí, vamos con todo el aloha!</option><option value="No">Esta vez no podremos asistir</option></select>
+        <div class="form-row"><div><label for="adults">Adultos (incluyéndote)</label><input id="adults" name="adults" type="number" min="1" max="10" value="1" required></div><div><label for="children">Niños</label><input id="children" name="children" type="number" min="0" max="10" value="1" required></div></div>
+        <label for="notes">Alergias o algún detalle importante <small>(opcional)</small></label><textarea id="notes" name="notes" rows="3" maxlength="500" placeholder="Cuéntanos lo que debamos saber"></textarea>
+        <button class="button coral" type="submit">¡Confirmar y activar modo fiesta! ↗</button><p class="form-note" id="form-note">Modo de muestra: tu respuesta se guarda en este navegador; no se envía al anfitrión.</p><p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#inicio">Más risas. Más abrazos.<br><span>¡Más Ohana!</span></a><p>Con cariño, <span data-name>Mateo</span> y su familia ✦</p><p class="image-credit">Personaje: Disney · <a href="https://clipart-library.com/clipart/stitches-cliparts-10.htm" target="_blank" rel="noopener noreferrer">Fuente de la imagen de Stitch</a></p><div class="footer-bottom"><span>INVITACIÓN DE EJEMPLO · DATOS EDITABLES</span><button id="effects" aria-pressed="false">Pausar efectos</button></div></footer>
+  <!-- MODALES -->
+  <dialog id="launch-dialog" class="launch-dialog" aria-labelledby="launch-title"><button class="close" aria-label="Cerrar">×</button><button id="present" class="present" aria-label="Abrir regalo sorpresa"><span class="present-art" aria-hidden="true"><span class="present-lid"></span><span class="present-box"></span><span class="present-flower">🌺</span></span><span class="present-hint">TOCA EL REGALO</span></button><span class="eyebrow">CORREO ESPECIAL DE LA ISLA</span><h2 id="launch-title">¡Tienes una sorpresa!</h2><div id="confetti" aria-hidden="true"></div><p id="launch-count" role="status" aria-live="polite">Toca el regalo para descubrirla.</p><button class="button coral" id="board">Ver todos los detalles ↗</button></dialog>
+  <dialog id="gift-dialog" aria-labelledby="gift-title"><button class="close" aria-label="Cerrar">×</button><span class="eyebrow dark">DETALLES CON CARIÑO</span><h2 id="gift-title">Ideas con mucho aloha</h2><p id="gift-ideas"></p><a id="gift-link" class="button coral" hidden target="_blank" rel="noopener noreferrer">Ver mesa de regalos ↗</a></dialog>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-caption"><button class="close" aria-label="Cerrar">×</button><img id="photo" alt=""><p id="photo-caption"></p><div class="photo-controls"><button id="prev" aria-label="Foto anterior">←</button><button id="next" aria-label="Foto siguiente">→</button></div></dialog>
+</body>
+</html>
