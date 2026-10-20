@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#23332A"/>
+      <stop offset="1" stop-color="#070908"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D5FF52" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FF8C1E" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g1)"/>
+  <circle cx="1340" cy="180" r="130" fill="#C9FF4F" fill-opacity="0.08"/>
+  <circle cx="1220" cy="200" r="220" fill="#FF8C1E" fill-opacity="0.04"/>
+  <path d="M0 660L190 610L360 655L495 592L645 660L810 618L952 680L1114 622L1252 694L1430 640L1600 702V1000H0V660Z" fill="#18211C"/>
+  <path d="M0 740L140 720L284 768L420 714L620 790L790 732L950 795L1120 722L1280 788L1450 728L1600 780V1000H0V740Z" fill="#111714"/>
+  <g opacity="0.55">
+    <rect x="110" y="410" width="90" height="180" fill="#0E120F"/>
+    <rect x="220" y="360" width="130" height="240" fill="#101511"/>
+    <rect x="1210" y="370" width="100" height="210" fill="#0F1411"/>
+    <rect x="1320" y="320" width="160" height="280" fill="#131915"/>
+  </g>
+  <g opacity="0.25" stroke="#D8FFC8">
+    <path d="M80 130H520"/>
+    <path d="M80 150H490"/>
+    <path d="M80 170H450"/>
+    <path d="M1080 760H1520"/>
+    <path d="M1080 780H1490"/>
+  </g>
+  <g transform="translate(1010 252)">
+    <rect width="250" height="250" rx="20" fill="#0F130F" fill-opacity="0.58" stroke="#4D5B3C"/>
+    <circle cx="125" cy="125" r="76" stroke="#C9FF4F" stroke-opacity="0.45" stroke-width="2"/>
+    <circle cx="125" cy="125" r="50" stroke="#C9FF4F" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M125 18V232M18 125H232" stroke="#C9FF4F" stroke-opacity="0.4"/>
+  </g>
+  <g transform="translate(530 180)">
+    <path d="M40 190L150 20L260 190H40Z" fill="#202A23" stroke="#72875E"/>
+    <path d="M150 50L194 116H107L150 50Z" fill="#D8FF82" fill-opacity="0.18"/>
+    <rect x="115" y="190" width="70" height="120" fill="#111612"/>
+    <rect x="132" y="214" width="36" height="96" fill="#D9E6D4" fill-opacity="0.14"/>
+  </g>
+</svg>

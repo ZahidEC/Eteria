@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" rx="28" fill="#111613"/>
+  <g transform="translate(55 138)">
+    <rect x="70" y="28" width="300" height="18" rx="8" fill="#425249"/>
+    <rect x="182" y="8" width="75" height="16" rx="6" fill="#A0B33B"/>
+    <rect x="276" y="8" width="42" height="16" rx="6" fill="#5D6E66"/>
+    <rect x="18" y="33" width="54" height="10" rx="5" fill="#7E9180"/>
+    <rect x="366" y="30" width="100" height="12" rx="6" fill="#FF8C1E"/>
+    <path d="M190 46H246L275 110H223L190 46Z" fill="#2A312E"/>
+    <path d="M152 46H192V98H170L152 46Z" fill="#6A7C72"/>
+  </g>
+  <text x="34" y="42" fill="#C9FF4F" font-family="Arial" font-size="22">FRANCOTIRADOR NOCTURNO</text>
+</svg>

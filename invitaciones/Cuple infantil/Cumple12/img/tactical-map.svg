@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="430" viewBox="0 0 700 430" fill="none">
+  <rect width="700" height="430" rx="24" fill="#0F1513"/>
+  <path d="M30 108H670M30 214H670M30 320H670" stroke="#26322D"/>
+  <path d="M116 20V410M230 20V410M344 20V410M458 20V410M572 20V410" stroke="#26322D"/>
+  <path d="M86 338C186 280 233 178 315 167C394 157 412 241 483 257C563 274 610 228 658 174" stroke="#C9FF4F" stroke-width="4" stroke-dasharray="12 10"/>
+  <circle cx="86" cy="338" r="16" fill="#FF8C1E"/>
+  <circle cx="315" cy="167" r="12" fill="#FF8C1E"/>
+  <circle cx="483" cy="257" r="12" fill="#FF8C1E"/>
+  <circle cx="658" cy="174" r="18" fill="#F35138"/>
+  <rect x="456" y="54" width="184" height="86" rx="18" fill="#151D18" stroke="#415343"/>
+  <text x="480" y="88" fill="#E9EEE4" font-family="Arial" font-size="20">LZ ALFA</text>
+  <text x="480" y="114" fill="#A5B2A6" font-family="Arial" font-size="16">Zona segura</text>
+</svg>

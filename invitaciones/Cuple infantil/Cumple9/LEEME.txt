@@ -1,0 +1,67 @@
+==========================================================
+   MINEPARTY · INVITACIÓN WEB DE CUMPLEAÑOS MINECRAFT
+==========================================================
+
+1. CÓMO ABRIRLA
+   - Descomprime el archivo ZIP.
+   - Haz doble clic en index.html para abrir la web.
+   - O abre la carpeta desde Visual Studio Code y usa Live Server.
+
+2. DÓNDE CAMBIAR LOS DATOS (LO MÁS IMPORTANTE)
+   - Abre js/config.js y cambia el nombre, edad, fecha,
+     lugar, dirección, Google Maps y WhatsApp.
+   - Es una invitación DE MUESTRA con datos ficticios.
+   - Pon esDemostracion: false cuando ya sean los datos reales.
+   - Las fechas usan un desfase horario como -06:00 y la zona
+     indicada en zonaHoraria (ej: America/Mexico_City).
+
+3. CÓMO CAMBIAR LAS FOTOS
+   - Sustituye las fotos en assets/photos/foto-1.webp,
+     foto-2.webp, foto-3.webp y foto-4.webp.
+   - Conserva los nombres de archivo y tamaño aproximado,
+     o modifica sus rutas en index.html y js/main.js.
+   - Los paisajes incluidos son ilustrativos, NO fotos
+     reales de ningún niño.
+
+4. CÓMO CAMBIAR LA IMAGEN DEL FONDO
+   - Sustituye assets/world.webp por tu propia imagen.
+   - Encontrarás su estilo en css/styles.css en .hero-image.
+   - Los iconos pixel art están en assets/icons/.
+
+5. ESTRUCTURA
+   index.html         - Secciones y estructura HTML5
+   css/styles.css     - Estilos, efectos y responsive
+   js/config.js       - Personalización del cumpleaños
+   js/main.js         - Juego, fotos, calendario y WhatsApp
+   assets/world.webp  - Imagen principal de Minecraft
+   assets/photos/     - Imágenes ilustrativas de galería
+   assets/icons/      - Iconos originales estilo pixel art
+
+6. QUÉ FUNCIONA
+   ✓ Menú responsive y navegación por secciones.
+   ✓ Barra inferior de inventario con accesos directos.
+   ✓ Cofre que se abre al conseguir 3 diamantes al minar.
+   ✓ Reinicio del juego con posiciones aleatorias.
+   ✓ Explosión Creeper, confeti y sonidos opcionales.
+   ✓ Cuadro de fotos ampliable con flechas / teclado.
+   ✓ Cuenta atrás dinámica con la fecha configurada.
+   ✓ Descargar evento para el calendario (.ics).
+   ✓ Confirmación por WhatsApp con mensaje prellenado.
+   ✓ Respeto por la opción 'reducir movimiento' del sistema.
+
+7. IMPORTANTE PARA WHATSAPP
+   La web NO envía automáticamente confirmaciones ni guarda
+   datos en un servidor. Abre WhatsApp para que el invitado
+   confirme enviando el mensaje. Configura el número en
+   js/config.js. Si lo dejas vacío, WhatsApp permitirá escoger
+   el destinatario. No requiere base de datos.
+
+8. PUBLICACIÓN
+   Sitio estático. Puedes subir estos archivos a GitHub Pages,
+   Netlify o cualquier hosting estático. Mantén las rutas.
+   Las fuentes de Google requieren internet; sin conexión
+   se usa una fuente de respaldo.
+
+Nota: temática fan art de bloques/píxeles. No es un producto
+oficial ni está afiliado a Mojang o Microsoft.
+==========================================================

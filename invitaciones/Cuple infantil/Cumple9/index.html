@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101f16">
+  <meta name="description" content="Una aventura de cumpleaños en un mundo de bloques. ¡Acepta la misión!">
+  <title>Minecraft Party · Invitación de cumpleaños</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800;900&family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/icons/grass.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="pixel-sky" id="pixel-sky" aria-hidden="true"></div>
+  <canvas id="effects-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAV / MENÚ PRINCIPAL -->
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio"><img src="assets/icons/grass.png" alt=""/><span>MINE<span class="brand-accent">PARTY</span><small>EDICIÓN CUMPLEAÑOS</small></span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#aventura">LA AVENTURA</a>
+        <a href="#mina">LA MINA</a>
+        <a href="#recuerdos">RECUERDOS</a>
+        <a class="nav-cta" href="#confirmar">¡CONFIRMAR! <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 01 · HERO / PORTADA -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-stars" id="hero-stars" aria-hidden="true"></div>
+      <img class="float-item float-sword" src="assets/icons/sword.png" alt="" aria-hidden="true">
+      <img class="float-item float-pickaxe" src="assets/icons/pickaxe.png" alt="" aria-hidden="true">
+      <img class="float-item float-diamond" src="assets/icons/diamond.png" alt="" aria-hidden="true">
+      <img class="float-item float-torch" src="assets/icons/torch.png" alt="" aria-hidden="true">
+      <img class="float-item float-heart" src="assets/icons/heart.png" alt="" aria-hidden="true">
+      <img class="float-item float-emerald" src="assets/icons/emerald.png" alt="" aria-hidden="true">
+      <div class="hero-content wrap">
+        <div class="status-label"><span class="status-dot"></span> SERVIDOR DE CUMPLEAÑOS ONLINE <span class="status-bars">▮▮▮▮</span></div>
+        <div class="hero-kicker">¡HEY, AVENTURERO!</div>
+        <h1 id="hero-title"><span class="hero-line-one">ESTÁS INVITADO</span><span class="hero-line-two">A MI <em>MUNDO</em></span></h1>
+        <p class="hero-caption">Prepara tu espada, recoge tus diamantes y acompaña a <strong id="hero-name-inline">ALEX</strong> en su misión más épica.</p>
+        <div class="hero-level"><img src="assets/icons/heart.png" alt=""><span><strong id="hero-name">ALEX</strong> SUBE AL</span><b>NIVEL <span id="hero-age">8</span></b><img src="assets/icons/heart.png" alt=""></div>
+        <div class="hero-actions"><a class="btn btn-primary" href="#aventura"><img src="assets/icons/sword.png" alt=""> ¡ACEPTAR MISIÓN!</a><a class="btn btn-glass" href="#mina">EXPLORAR LA MINA ↓</a></div>
+        <div class="hero-subinfo"><div><span class="tiny-icon">◆</span><span id="hero-date">21 NOV 2026</span></div><span class="small-divider"></span><div><span class="tiny-icon">✦</span> <span id="hero-location">LUGAR POR CONFIRMAR</span></div></div>
+      </div>
+      <button class="creeper-easter-egg" id="creeper-egg" aria-label="Toca al Creeper para una sorpresa" title="¡No toques al Creeper!"><img src="assets/icons/creeper.png" alt="Creeper"><span>¿ME VES?</span></button>
+      <a href="#aventura" class="scroll-signal">DESLIZA PARA CONTINUAR <span>↓</span></a>
+      <div class="terrain-top" aria-hidden="true"></div>
+    </section>
+
+    <!-- 02 · MUNDO / INFORMACIÓN -->
+    <section class="section adventure-section" id="aventura" aria-labelledby="adventure-title">
+      <img class="ambient-icon ambient-one" src="assets/icons/torch.png" alt="" aria-hidden="true">
+      <img class="ambient-icon ambient-two" src="assets/icons/grass.png" alt="" aria-hidden="true">
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow-line"></span> MISIÓN 01 / REUNIR A LA TRIBU</p>
+        <h2 class="section-title" id="adventure-title">¡SE VIENE UNA <span class="green">AVENTURA ÉPICA!</span></h2>
+        <p class="section-intro">¡Nuestro personaje favorito está por subir de nivel! Y este mundo no estaría completo sin ti. Aparta la fecha y ven a celebrar.</p>
+        <div class="mission-layout">
+          <div class="mission-main panel">
+            <div class="panel-top"><span>◆ NUEVA MISIÓN DISPONIBLE</span><span class="panel-dots">■ ■ ■</span></div>
+            <div class="mission-avatar"><img src="assets/icons/sword.png" alt="" aria-hidden="true"><div><small>JUGADOR PRINCIPAL</small><h3 id="mission-name">ALEX</h3><span class="xp-label">XP · CUMPLEAÑOS</span></div><span class="lvl-tag">LVL <b id="mission-age">08</b></span></div>
+            <div class="xp-bar" aria-label="Barra de experiencia completa"><span></span></div>
+            <div class="mission-grid">
+              <div class="mission-detail"><img src="assets/icons/diamond.png" alt=""><div><small>FECHA DE LA MISIÓN</small><strong id="event-full-date">SÁBADO 21 DE NOVIEMBRE</strong><span id="event-year">2026</span></div></div>
+              <div class="mission-detail"><img src="assets/icons/torch.png" alt=""><div><small>HORA DE INICIO</small><strong id="event-time">4:00 PM</strong><span>¡No llegues tarde!</span></div></div>
+              <div class="mission-detail"><img src="assets/icons/grass.png" alt=""><div><small>PUNTO DE ENCUENTRO</small><strong id="event-place">POR CONFIRMAR</strong><span id="event-address">Agrega aquí tu dirección</span></div></div>
+              <div class="mission-detail"><img src="assets/icons/cake.png" alt=""><div><small>REQUISITO PARA ENTRAR</small><strong>MUCHAS GANAS DE DIVERTIRTE</strong><span>No necesitas experiencia</span></div></div>
+            </div>
+            <div class="mission-actions"><a class="btn btn-primary btn-small" href="#confirmar">✔ CONFIRMAR MISIÓN</a><button type="button" class="btn btn-outline btn-small" id="calendar-btn">+ A MI CALENDARIO</button><a class="btn btn-outline btn-small map-btn" id="map-btn" href="#aventura" aria-disabled="true">⌖ VER UBICACIÓN</a></div>
+          </div>
+          <div class="countdown-panel panel">
+            <span class="mini-label">⏳ CUENTA REGRESIVA</span>
+            <div class="countdown-art"><img src="assets/icons/cake.png" alt="Pastel de cumpleaños"><span class="ring ring-1"></span><span class="ring ring-2"></span></div>
+            <h3>EL PORTAL SE ABRE EN...</h3>
+            <div class="countdown" aria-label="Tiempo restante para la fiesta"><div><strong id="cd-days">00</strong><span>DÍAS</span></div><span class="cd-sep">:</span><div><strong id="cd-hours">00</strong><span>HORAS</span></div><span class="cd-sep">:</span><div><strong id="cd-mins">00</strong><span>MIN</span></div><span class="cd-sep">:</span><div><strong id="cd-secs">00</strong><span>SEG</span></div></div>
+            <p id="countdown-note">¡Prepara tu inventario!</p>
+            <div class="countdown-bottom">◈ QUE COMIENCE LA AVENTURA ◈</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · MINIJUEGO / MINA INTERACTIVA -->
+    <section class="section mine-section" id="mina" aria-labelledby="mine-title">
+      <div class="mine-wall" aria-hidden="true"></div>
+      <div class="wrap mine-content">
+        <p class="eyebrow eyebrow-cyan"><span class="eyebrow-line"></span> MISIÓN 02 / EXPLORACIÓN</p>
+        <h2 class="section-title" id="mine-title">¡ES HORA DE <span class="cyan">MINAR!</span></h2>
+        <p class="section-intro">Usa tu pico para romper bloques. <strong>¡Encuentra los 3 diamantes escondidos</strong> y desbloquea el cofre sorpresa!</p>
+        <div class="mine-layout">
+          <div class="mine-game panel">
+            <div class="panel-top"><span>⛏ MINA DE DIAMANTES</span><span class="mini-label">MODO SUPERVIVENCIA</span></div>
+            <div class="mine-head"><div><img src="assets/icons/pickaxe.png" alt=""><span>HAZ CLIC EN LOS BLOQUES</span></div><button type="button" class="reset-button" id="reset-game" aria-label="Reiniciar el minijuego">↻ REINICIAR</button></div>
+            <div class="block-grid" id="block-grid" role="group" aria-label="Bloques de la mina que puedes romper"></div>
+            <p class="mine-feedback" id="mine-feedback" role="status" aria-live="polite">¡Hay diamantes escondidos bajo la piedra!</p>
+          </div>
+          <aside class="loot-panel panel">
+            <div class="loot-title"><img src="assets/icons/chest.png" alt=""><div><small>TU INVENTARIO</small><h3>BOTÍN ENCONTRADO</h3></div></div>
+            <div class="loot-progress"><div class="loot-count"><span>DIAMANTES</span><b id="diamond-count">0 / 3</b></div><div class="loot-meter"><span id="diamond-progress"></span></div></div>
+            <div class="diamond-slots" aria-label="Diamantes encontrados"><span class="diamond-slot" id="slot-1"><img src="assets/icons/diamond.png" alt="Diamante 1"></span><span class="diamond-slot" id="slot-2"><img src="assets/icons/diamond.png" alt="Diamante 2"></span><span class="diamond-slot" id="slot-3"><img src="assets/icons/diamond.png" alt="Diamante 3"></span></div>
+            <div class="chest-wrapper"><button type="button" id="secret-chest" class="secret-chest" aria-label="Cofre sorpresa bloqueado" disabled><img src="assets/icons/chest.png" alt=""><span class="chest-lock" id="chest-lock">🔒</span></button><h4 id="chest-title">COFRE BLOQUEADO</h4><p id="chest-hint">Consigue tres diamantes para abrirlo.</p></div>
+            <div class="loot-tip">✦ TIP: CADA BLOQUE GUARDA UNA SORPRESA</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · FOTOS AMPLIABLES -->
+    <section class="section gallery-section" id="recuerdos" aria-labelledby="gallery-title">
+      <img class="ambient-icon ambient-three" src="assets/icons/emerald.png" alt="" aria-hidden="true">
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow-line"></span> MISIÓN 03 / ÁLBUM DE AVENTURAS</p>
+        <h2 class="section-title" id="gallery-title">NUESTROS <span class="green">MEJORES PIXELES</span></h2>
+        <p class="section-intro">Estos espacios están listos para colocar las fotos del cumpleañero. ¡Toca una imagen para verla en grande!</p>
+        <div class="gallery-grid">
+          <button type="button" class="gallery-tile large" data-photo="0" aria-label="Ampliar foto 1"><img src="assets/photos/foto-1.webp" alt="Imagen de muestra: montaña y naturaleza de bloques"><span class="gallery-overlay"><span>01 / RECUERDOS</span><strong>NUESTRA PRIMERA AVENTURA</strong><span class="zoom-sign">⊞</span></span></button>
+          <button type="button" class="gallery-tile" data-photo="1" aria-label="Ampliar foto 2"><img src="assets/photos/foto-2.webp" alt="Imagen de muestra: casas del mundo de bloques"><span class="gallery-overlay"><span>02 / RECUERDOS</span><strong>MOMENTOS ÉPICOS</strong><span class="zoom-sign">⊞</span></span></button>
+          <button type="button" class="gallery-tile" data-photo="2" aria-label="Ampliar foto 3"><img src="assets/photos/foto-3.webp" alt="Imagen de muestra: valle y castillo en el mundo de bloques"><span class="gallery-overlay"><span>03 / RECUERDOS</span><strong>UN MUNDO POR DESCUBRIR</strong><span class="zoom-sign">⊞</span></span></button>
+          <button type="button" class="gallery-tile wide" data-photo="3" aria-label="Ampliar foto 4"><img src="assets/photos/foto-4.webp" alt="Imagen de muestra: paisaje al atardecer"><span class="gallery-overlay"><span>04 / RECUERDOS</span><strong>LOS MEJORES MOMENTOS SE COMPARTEN</strong><span class="zoom-sign">⊞</span></span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · RSVP -->
+    <section class="section rsvp-section" id="confirmar" aria-labelledby="rsvp-title">
+      <div class="wrap rsvp-layout">
+        <div class="rsvp-visual">
+          <div class="rsvp-stars">✦　✧　✦</div>
+          <div class="rsvp-items"><img class="rsvp-sword" src="assets/icons/sword.png" alt=""><img class="rsvp-apple" src="assets/icons/apple.png" alt=""><img class="rsvp-cake" src="assets/icons/cake.png" alt=""><img class="rsvp-diamond" src="assets/icons/diamond.png" alt=""></div>
+          <span class="eyebrow">MISIÓN FINAL / ÚNETE AL EQUIPO</span>
+          <h2 class="section-title" id="rsvp-title">¿ESTÁS LISTO PARA <span class="green">LA AVENTURA?</span></h2>
+          <p>La mejor parte de esta misión es jugar juntos. ¡Nos encantará verte ahí!</p>
+          <div class="rsvp-fun">❤ ❤ ❤ ❤ ❤</div>
+        </div>
+        <form class="rsvp-form panel" id="rsvp-form" novalidate>
+          <div class="panel-top"><span>◆ CONFIRMACIÓN DE ASISTENCIA</span><span class="panel-dots">■ ■ ■</span></div>
+          <div class="form-inner"><h3>ÚNETE A MI SERVIDOR</h3><p>Completa tu ficha de jugador y envía tu confirmación.</p>
+          <label for="guest-name">TU NOMBRE DE JUGADOR <span>*</span></label><input id="guest-name" name="name" placeholder="Escribe tu nombre" maxlength="70" required autocomplete="name">
+          <div class="form-row"><div><label for="attendance">¿VIENES A LA MISIÓN? <span>*</span></label><select id="attendance" name="attendance" required><option value="yes">¡SÍ, AHÍ ESTARÉ!</option><option value="no">NO PODRÉ ASISTIR</option></select></div><div><label for="party-size">JUGADORES</label><select id="party-size" name="party-size"><option value="1">1 JUGADOR</option><option value="2">2 JUGADORES</option><option value="3">3 JUGADORES</option><option value="4">4 JUGADORES</option><option value="5">5 JUGADORES</option><option value="6">6 JUGADORES</option></select></div></div>
+          <label for="guest-message">MENSAJE PARA EL CUMPLEAÑERO <span class="optional">(OPCIONAL)</span></label><textarea id="guest-message" name="message" rows="3" maxlength="350" placeholder="¡Vamos a construir recuerdos épicos!"></textarea>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-primary form-submit" type="submit"><img src="assets/icons/emerald.png" alt=""> ENVIAR POR WHATSAPP ↗</button><p class="form-note">Se abrirá WhatsApp con tu mensaje listo para enviar. No guardamos información en la página.</p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-content"><div class="brand"><img src="assets/icons/grass.png" alt=""><span>MINE<span class="brand-accent">PARTY</span><small>UNA AVENTURA INOLVIDABLE</small></span></div><div class="footer-center">HECHO CON <img src="assets/icons/heart.png" alt="amor"> Y MUCHOS BLOQUES<br><small id="sample-warning">INVITACIÓN DEMOSTRATIVA · PERSONALIZA LOS DATOS EN JS/CONFIG.JS</small></div><a href="#inicio" class="to-top" aria-label="Volver al inicio">↑</a></div></footer>
+
+  <!-- INVENTARIO FLOTANTE / ACCESOS DIRECTOS -->
+  <div class="hotbar" aria-label="Barra de accesos rápidos"><button data-scroll="inicio" aria-label="Inicio" title="Inicio"><img src="assets/icons/grass.png" alt=""></button><button data-scroll="aventura" aria-label="Datos de la fiesta" title="Datos"><img src="assets/icons/sword.png" alt=""></button><button data-scroll="mina" aria-label="Jugar al minijuego" title="Minar"><img src="assets/icons/pickaxe.png" alt=""></button><button data-scroll="recuerdos" aria-label="Fotos" title="Fotos"><img src="assets/icons/diamond.png" alt=""></button><button data-scroll="confirmar" aria-label="Confirmar asistencia" title="Confirmar"><img src="assets/icons/chest.png" alt=""></button><button id="celebrate-btn" aria-label="Lanzar confeti" title="¡Celebrar!"><img src="assets/icons/cake.png" alt=""></button><button id="sound-btn" class="sound-btn" aria-pressed="false" aria-label="Activar sonido" title="Activar sonido"><span id="sound-icon">♪̸</span></button></div>
+
+  <!-- MODAL DEL COFRE -->
+  <dialog class="reward-dialog" id="reward-dialog" aria-labelledby="reward-title"><div class="reward-inner"><button type="button" class="close-dialog" id="reward-close" aria-label="Cerrar">✕</button><div class="reward-burst">✧ ◆ ✦ ◆ ✧</div><img class="reward-img" src="assets/icons/chest.png" alt="Cofre abierto"><span class="mini-label">¡LOGRO DESBLOQUEADO!</span><h2 id="reward-title">¡LO CONSEGUISTE!</h2><p>¡Eres un auténtico explorador! Has reunido los diamantes y desbloqueado tu invitación a la aventura.</p><div class="reward-gems"><img src="assets/icons/diamond.png" alt=""><img src="assets/icons/diamond.png" alt=""><img src="assets/icons/diamond.png" alt=""></div><a href="#confirmar" class="btn btn-primary" id="reward-confirm">¡CONFIRMAR MI MISIÓN! →</a></div></dialog>
+
+  <!-- LIGHTBOX DE FOTOS -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de fotos"><button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar galería">✕</button><button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="Foto anterior">‹</button><img id="lightbox-img" src="assets/photos/foto-1.webp" alt="Foto ampliada"><button type="button" class="lightbox-next" id="lightbox-next" aria-label="Siguiente foto">›</button><div class="lightbox-counter" id="lightbox-counter">01 / 04</div></dialog>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+</body>
+</html>

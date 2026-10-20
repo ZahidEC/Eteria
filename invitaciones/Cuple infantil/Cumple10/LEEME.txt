@@ -1,0 +1,77 @@
+══════════════════════════════════════════════════════════════════
+  FREE FIRE · OPERACIÓN CUMPLEAÑOS
+  Invitación web interactiva — Versión original y editable
+══════════════════════════════════════════════════════════════════
+
+¡LA INVITACIÓN ESTÁ LISTA PARA USARSE!
+
+1. INICIO
+   • Descomprime el archivo ZIP.
+   • Abre "index.html" haciendo doble clic o con Live Server de VS Code.
+   • La página funciona localmente sin servidor y sin base de datos.
+
+2. PERSONALIZACIÓN (lo más importante)
+   Abre "js/config.js" y modifica:
+   • nombre: nombre del cumpleañero/a.
+   • edad: edad que cumple.
+   • fecha: fecha/hora en formato AAAA-MM-DDTHH:MM:SS-06:00.
+   • lugar: nombre del salón o ubicación.
+   • direccion: dirección completa.
+   • googleMaps: enlace a Google Maps (https://...).
+   • whatsapp: tu número para recibir confirmaciones con código de país.
+     Ejemplo de estructura para México: 521XXXXXXXXXX (solo números).
+     Si dejas el campo vacío, WhatsApp abrirá la opción para elegir contacto.
+
+   Al cambiar estos valores se actualizan automáticamente portada,
+   jugador, tarjetas, contador y mensaje de confirmación.
+
+3. FOTOGRAFÍAS
+   Imágenes actuales: assets/gallery/foto-01.svg, foto-02.svg, foto-03.svg.
+   Son gráficos de demostración originales y NO fotos de una persona.
+   Para reemplazarlas por fotografías reales:
+     a. Copia los JPG/PNG/WebP a assets/gallery/.
+     b. Abre "index.html" y busca `assets/gallery/foto-01.svg`.
+     c. Cambia las 2 referencias (tarjeta y modal usa la imagen de tarjeta)
+        a la ruta de la nueva imagen; repite para las demás.
+
+4. CAMBIOS VISUALES
+   • css/styles.css: toda la apariencia; variables al comienzo.
+   • assets/hero-scene.svg: ilustración original del campo de batalla.
+   • assets/icons/: colección de 22 iconos SVG locales editables.
+   • index.html: textos y orden de las secciones.
+   • js/main.js: interacciones; no requiere modificar para personalizar.
+
+5. EFECTOS E INTERACCIONES
+   ✓ Portada panorámica con arte original y partículas de fuego.
+   ✓ Paracaidistas, personaje, cajas, iconos y elementos de combate.
+   ✓ Menú móvil y navegación por secciones.
+   ✓ Cuatro armas seleccionables con mensajes y estado EQUIPADO.
+   ✓ Minijuego: abre 3 suministros y obtén 3 insignias.
+   ✓ Recompensa final BOOYAH con confeti.
+   ✓ Cuenta regresiva real a la fecha del evento.
+   ✓ Exportar evento al calendario (.ics).
+   ✓ Galería con visor, flechas y teclado.
+   ✓ Radar animado y acceso a Google Maps configurado.
+   ✓ RSVP por WhatsApp con mensaje prellenado.
+   ✓ Sonidos electrónicos OPCIONALES (desactivados por defecto).
+   ✓ Responsive: escritorio, tableta, teléfono y pantalla pequeña.
+
+6. IMPORTANTE SOBRE CONFIRMACIONES
+   No se guardan datos personales en servidores: el formulario abre
+   WhatsApp con un mensaje prellenado. El invitado debe pulsar ENVIAR.
+   La invitación no recopila respuestas automáticamente.
+
+7. PUBLICAR GRATIS (GITHUB PAGES)
+   • Crea un repositorio público en GitHub.
+   • Sube todos los archivos de Invitacion_Free_Fire/ a la raíz.
+   • Settings → Pages → Deploy from a branch → main / (root).
+   • Publica y comparte la URL de GitHub Pages.
+
+NOTAS
+   - Diseño temático fan-made, no oficial ni afiliado a Garena.
+   - Los gráficos SVG son originales y se incluyen en el proyecto.
+   - Las fuentes opcionales usan Google Fonts; si estás sin internet
+     se muestran fuentes de respaldo instaladas en el equipo.
+   - Para distribuir la invitación, NO necesitas comprar ninguna plantilla.
+
+¡QUE COMIENCE LA PARTIDA!

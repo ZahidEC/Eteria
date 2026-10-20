@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación temática de cumpleaños estilo operación táctica." />
+  <title>Operación Cumpleaños | Tactical Invite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#hero">
+      <span class="brand__badge">OP</span>
+      <span class="brand__text">Operación Cumpleaños</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#briefing">Briefing</a>
+      <a href="#arsenal">Arsenal</a>
+      <a href="#mission">Misión</a>
+      <a href="#gallery">Galería</a>
+      <a href="#rsvp">Confirmar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <div class="eyebrow">INVITACIÓN TÁCTICA · EDICIÓN ESPECIAL</div>
+        <h1><span id="heroName">Alejandro</span> entra en la <em>zona de combate</em></h1>
+        <p class="hero__lead">Prepárate para una misión de alto nivel: celebrar un cumpleaños épico con escuadrón, suministros, objetivos y mucha acción.</p>
+        <div class="hero__stats">
+          <div class="stat"><span>EDAD</span><strong id="heroAge">11</strong></div>
+          <div class="stat"><span>MISIÓN</span><strong>FIESTA</strong></div>
+          <div class="stat"><span>RANGO</span><strong>ÉLITE</strong></div>
+        </div>
+        <div class="hero__actions">
+          <a href="#rsvp" class="btn btn--primary">Unirme al escuadrón</a>
+          <a href="#mission" class="btn btn--ghost">Iniciar misión</a>
+        </div>
+      </div>
+      <div class="hero__cards container">
+        <article class="glass-card intel">
+          <p class="tag">BRIEFING</p>
+          <h3>Operación: <span id="operationName">Night Raid Party</span></h3>
+          <ul class="intel__list">
+            <li><strong>Fecha:</strong> <span id="briefDate">Sábado 21 de noviembre de 2026</span></li>
+            <li><strong>Hora:</strong> <span id="briefTime">4:30 PM</span></li>
+            <li><strong>Punto de reunión:</strong> <span id="briefVenue">Zona segura, Tulancingo, Hidalgo</span></li>
+          </ul>
+        </article>
+        <article class="glass-card countdown-card">
+          <p class="tag">CUENTA REGRESIVA</p>
+          <div class="countdown">
+            <div><strong id="days">00</strong><span>Días</span></div>
+            <div><strong id="hours">00</strong><span>Horas</span></div>
+            <div><strong id="minutes">00</strong><span>Min</span></div>
+            <div><strong id="seconds">00</strong><span>Seg</span></div>
+          </div>
+          <button class="btn btn--small btn--ghost" id="calendarBtn">Agregar al calendario</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="briefing section" id="briefing">
+      <div class="container grid-two">
+        <div>
+          <p class="section-kicker">INFORME DEL COMANDANTE</p>
+          <h2>Objetivo principal: <span>celebrar en grande</span></h2>
+          <p>Esta invitación está diseñada como si recibieras una orden de despliegue. Tendrás acceso al arsenal, al mapa táctico, a la misión interactiva y a la confirmación del operativo.</p>
+          <div class="info-grid">
+            <article>
+              <span>Operador</span>
+              <strong id="profileName">Alejandro</strong>
+            </article>
+            <article>
+              <span>Nivel</span>
+              <strong id="profileLevel">Nivel 11</strong>
+            </article>
+            <article>
+              <span>Modo</span>
+              <strong>Operación Especial</strong>
+            </article>
+            <article>
+              <span>Dress code</span>
+              <strong>Actitud de escuadrón</strong>
+            </article>
+          </div>
+        </div>
+        <div class="tactical-panel">
+          <div class="tactical-panel__header">
+            <span class="dot"></span>
+            <span>MAPA TÁCTICO</span>
+          </div>
+          <img src="img/tactical-map.svg" alt="Mapa táctico estilizado con zonas y rutas" />
+          <div class="map-meta">
+            <p><strong>Llegada recomendada:</strong> 15 minutos antes del despliegue.</p>
+            <a class="btn btn--small btn--primary" id="mapBtn" href="#">Abrir ubicación</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="arsenal section" id="arsenal">
+      <div class="container">
+        <p class="section-kicker">SELECCIÓN DE EQUIPAMIENTO</p>
+        <h2>Arma tu <span>loadout</span></h2>
+        <div class="arsenal-layout">
+          <div class="loadout-view glass-card">
+            <img id="loadoutImage" src="img/loadout-rifle.svg" alt="Arma seleccionada" />
+            <div class="loadout-copy">
+              <p class="tag">EQUIPAMIENTO ACTIVO</p>
+              <h3 id="loadoutTitle">Rifle táctico</h3>
+              <p id="loadoutDesc">Precisión, fuerza y control para liderar el escuadrón.</p>
+            </div>
+          </div>
+          <div class="loadout-actions">
+            <button class="loadout-btn is-active" data-title="Rifle táctico" data-desc="Precisión, fuerza y control para liderar el escuadrón." data-image="img/loadout-rifle.svg">Rifle táctico</button>
+            <button class="loadout-btn" data-title="Subfusil veloz" data-desc="Ligero, rápido y perfecto para entrar primero a la acción." data-image="img/loadout-smg.svg">Subfusil veloz</button>
+            <button class="loadout-btn" data-title="Escopeta de choque" data-desc="Potencia brutal para distancias cortas y jugadas intensas." data-image="img/loadout-shotgun.svg">Escopeta de choque</button>
+            <button class="loadout-btn" data-title="Francotirador nocturno" data-desc="Visión táctica y máximo enfoque para tiradores expertos." data-image="img/loadout-sniper.svg">Francotirador nocturno</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission section" id="mission">
+      <div class="container">
+        <p class="section-kicker">MISIÓN INTERACTIVA</p>
+        <h2>Abre los <span>suministros</span> y desbloquea la orden final</h2>
+        <p class="section-lead">Toca cada caja de suministro para conseguir insignias tácticas. Cuando completes las 3, se desbloqueará la orden de celebración.</p>
+        <div class="crate-grid">
+          <button class="crate-card" data-crate="1">
+            <span class="crate-top">Suministro 01</span>
+            <strong>Intel de misión</strong>
+            <small>Haz clic para abrir</small>
+          </button>
+          <button class="crate-card" data-crate="2">
+            <span class="crate-top">Suministro 02</span>
+            <strong>Acceso al arsenal</strong>
+            <small>Haz clic para abrir</small>
+          </button>
+          <button class="crate-card" data-crate="3">
+            <span class="crate-top">Suministro 03</span>
+            <strong>Permiso del escuadrón</strong>
+            <small>Haz clic para abrir</small>
+          </button>
+        </div>
+        <div class="mission-progress glass-card">
+          <div>
+            <p class="tag">PROGRESO DE MISIÓN</p>
+            <h3><span id="crateCount">0</span>/3 suministros abiertos</h3>
+            <p id="missionText">Necesitas 3 insignias para completar la operación.</p>
+          </div>
+          <button class="btn btn--primary" id="rewardBtn" disabled>Desbloquear orden final</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <p class="section-kicker">REGISTRO VISUAL</p>
+        <h2>Galería del <span>operador</span></h2>
+        <div class="gallery-grid">
+          <button class="gallery-item" data-image="img/gallery-1.svg" data-title="Operación: Inicio">
+            <img src="img/gallery-1.svg" alt="Foto temática 1" />
+          </button>
+          <button class="gallery-item" data-image="img/gallery-2.svg" data-title="Escuadrón listo">
+            <img src="img/gallery-2.svg" alt="Foto temática 2" />
+          </button>
+          <button class="gallery-item" data-image="img/gallery-3.svg" data-title="Modo táctico">
+            <img src="img/gallery-3.svg" alt="Foto temática 3" />
+          </button>
+          <button class="gallery-item" data-image="img/gallery-4.svg" data-title="Victoria del día">
+            <img src="img/gallery-4.svg" alt="Foto temática 4" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="container grid-two">
+        <div>
+          <p class="section-kicker">CONFIRMACIÓN DE ASISTENCIA</p>
+          <h2>Únete al <span>escuadrón</span></h2>
+          <p>Confirma tu asistencia y prepárate para entrar al operativo. Puedes enviar tus datos directamente por WhatsApp.</p>
+          <ul class="check-list">
+            <li>Evento táctico con ambientación especial</li>
+            <li>Juegos, botanas y misión final</li>
+            <li>Un cumpleaños pensado para fans de la acción</li>
+          </ul>
+        </div>
+        <form class="rsvp-form glass-card" id="rsvpForm">
+          <label>
+            Nombre del invitado
+            <input type="text" id="guestName" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            ¿Podrás asistir?
+            <select id="guestStatus">
+              <option value="Sí, me uno a la misión">Sí, me uno a la misión</option>
+              <option value="No podré asistir">No podré asistir</option>
+            </select>
+          </label>
+          <label>
+            Número de acompañantes
+            <select id="guestCompanions">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+          <label>
+            Mensaje para el operador
+            <textarea id="guestMessage" placeholder="Escribe un mensaje..."></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Confirmar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Operación Cumpleaños</strong>
+        <p>Invitación temática inspirada en videojuegos de combate. Diseño editable y estático.</p>
+      </div>
+      <button class="btn btn--ghost btn--small" id="soundToggle">Activar efectos</button>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="rewardModal">
+    <div class="modal__content reward-content">
+      <p class="tag">OPERACIÓN COMPLETADA</p>
+      <h3>¡Misión cumplida!</h3>
+      <p>Has desbloqueado la orden final. Ahora solo queda confirmar tu asistencia y entrar al operativo.</p>
+      <div class="reward-stamp">MISSION<br>COMPLETE</div>
+      <button class="btn btn--primary modal-close">Cerrar</button>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="galleryModal">
+    <div class="modal__content gallery-modal-content">
+      <img id="modalImage" src="" alt="Vista ampliada" />
+      <div class="gallery-modal__meta">
+        <h3 id="modalTitle">Galería</h3>
+        <button class="btn btn--primary modal-close">Cerrar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
