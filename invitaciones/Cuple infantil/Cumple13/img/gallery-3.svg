@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#FFF2FB"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="44" fill="url(#g3)"/>
+  <rect x="66" y="80" width="668" height="500" rx="34" fill="#ffffff" stroke="#DCE7FF" stroke-width="4"/>
+  <rect x="116" y="410" width="120" height="110" rx="20" fill="#FFD84D"/>
+  <rect x="256" y="340" width="120" height="180" rx="20" fill="#FF8A00"/>
+  <rect x="396" y="270" width="120" height="250" rx="20" fill="#7EDBFF"/>
+  <rect x="536" y="355" width="120" height="165" rx="20" fill="#FFD84D"/>
+  <circle cx="220" cy="230" r="50" fill="#FFD84D" fill-opacity="0.22"/>
+  <circle cx="326" cy="206" r="36" fill="#FF8A00" fill-opacity="0.22"/>
+  <circle cx="430" cy="180" r="26" fill="#FFD84D" fill-opacity="0.28"/>
+  <rect x="110" y="116" width="172" height="54" rx="26" fill="#ffffff" stroke="#DCE7FF" stroke-width="3"/>
+  <text x="140" y="150" font-size="28" font-family="Arial" fill="#41509A">COINS MODE</text>
+  <rect x="120" y="626" width="560" height="78" rx="26" fill="#ffffff" stroke="#DCE7FF" stroke-width="3"/>
+  <text x="176" y="676" font-size="42" font-family="Arial" fill="#394686">ROBLOX PARTY WORLD</text>
+</svg>

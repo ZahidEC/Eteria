@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" rx="28" fill="#111613"/>
+  <g transform="translate(70 130) scale(1.1)">
+    <rect x="70" y="30" width="250" height="24" rx="8" fill="#2E3A34"/>
+    <rect x="290" y="8" width="58" height="18" rx="4" fill="#586B61"/>
+    <rect x="105" y="54" width="140" height="18" rx="4" fill="#3B4A42"/>
+    <path d="M245 54H305L330 94H278L245 54Z" fill="#495A51"/>
+    <rect x="332" y="30" width="84" height="16" rx="8" fill="#869E38"/>
+    <rect x="10" y="36" width="66" height="12" rx="6" fill="#71846D"/>
+    <path d="M165 72H203V135H184L165 72Z" fill="#5D6E66"/>
+    <path d="M210 72H248L276 138H224L210 72Z" fill="#2C3631"/>
+  </g>
+  <text x="34" y="42" fill="#C9FF4F" font-family="Arial" font-size="22">RIFLE TÁCTICO</text>
+</svg>

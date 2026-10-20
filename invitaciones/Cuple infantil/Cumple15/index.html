@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1114" />
+  <meta name="description" content="Invitación interactiva de cumpleaños inspirada en Call of Duty y Warzone." />
+  <title>OPERACIÓN CUMPLEAÑOS | Warzone Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="reticle-cursor" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Volver a inicio"><span class="logo-mark">✣</span><span>CALL OF <b>DUTY</b><small>OPERACIÓN CUMPLEAÑOS</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Secciones">
+        <a href="#mision">LA MISIÓN</a><a href="#operador">OPERADOR</a><a href="#arsenal">ARSENAL</a><a href="#modos">MODOS</a><a href="#galeria">GALERÍA</a><a class="nav-accent" href="#confirmar">CONFIRMAR <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-backdrop"></div><div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="blink"></span> TRANSMISIÓN EN VIVO <span class="line"></span> OPERACIÓN 001</div>
+          <div class="hero-sign">UNA NUEVA MISIÓN HA SIDO ACTIVADA</div>
+          <h1>OPERACIÓN<br><span class="gold-text">CUMPLEAÑOS</span></h1>
+          <p class="hero-bigline">ESTÁS INVITADO A CELEBRAR CON <b id="heroName">ALEX</b></p>
+          <p class="hero-desc">Prepárate para una misión inolvidable. Tu escuadrón está esperando: juegos, diversión, pastel y recompensas épicas.</p>
+          <div class="hero-actions"><a href="#confirmar" class="btn btn-primary"><span>✣</span> ACEPTAR LA MISIÓN <span>↗</span></a><a href="#mision" class="btn btn-outline">VER EL BRIEFING ↓</a></div>
+          <div class="hero-mini"><span>◈ ZONA SEGURA</span><span>◉ ESCUADRÓN VIP</span><span>✦ MISIÓN ESPECIAL</span></div>
+        </div>
+        <div class="hero-display">
+          <div class="operator-aura"></div>
+          <img class="hero-operator-art" src="assets/img/operador-art.webp" alt="Ilustración táctica cinematográfica de un operador enmascarado" />
+          <div class="hero-photo-wrap"><img src="assets/img/cumpleanero-ejemplo.webp" alt="Foto ficticia del cumpleañero con audífonos gamer" /><span class="photo-indicator">OPERADOR INVITADO / FOTO DEMO</span></div>
+          <div class="hero-age"><small>SUBIENDO DE NIVEL</small><b id="heroAge">10</b><span>AÑOS</span></div>
+          <div class="hero-coordinates">34° 07' 17.00" N <span> // SIGNAL ACTIVE</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><div><span class="status-dot"></span> CONEXIÓN SEGURA // FIESTA CONFIRMADA</div><a href="#mision">DESLIZA PARA INICIAR <span>↓↓</span></a></div>
+    </section>
+
+    <section class="section mission" id="mision">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow">01 // INTELIGENCIA DE MISIÓN</div><h2>EL <span>BRIEFING</span></h2></div><p>Todos los datos que necesitas antes de comenzar la operación.</p></div>
+        <div class="mission-grid">
+          <article class="hud-card mission-main">
+            <div class="panel-title"><span>▣</span> DETALLES DE LA OPERACIÓN <em>CLASIFICADO / NIVEL 01</em></div>
+            <div class="mission-details">
+              <div><span class="detail-icon">▦</span><div><small>FECHA DEL DESPLIEGUE</small><strong id="eventDate">SÁBADO 20 DE FEBRERO DE 2027</strong></div></div>
+              <div><span class="detail-icon">◷</span><div><small>HORA DE REUNIÓN</small><strong id="eventTime">04:00 PM</strong></div></div>
+              <div><span class="detail-icon">⌖</span><div><small>BASE DE OPERACIONES</small><strong id="eventVenue">SALÓN ZONA GAMER · TULANCINGO</strong></div></div>
+            </div>
+            <div class="brief-actions"><a class="btn btn-primary btn-sm" id="mapLink" href="#" target="_blank" rel="noopener">⌖ VER UBICACIÓN</a><button class="btn btn-outline btn-sm" id="calendarBtn">▦ AGENDAR MISIÓN</button></div>
+          </article>
+          <article class="hud-card countdown-panel">
+            <div class="panel-title"><span>◷</span> INICIA EN <em>COUNTDOWN</em></div>
+            <div class="countdown"><div><strong id="cdDays">00</strong><span>DÍAS</span></div><div><strong id="cdHours">00</strong><span>HORAS</span></div><div><strong id="cdMinutes">00</strong><span>MIN</span></div><div><strong id="cdSeconds">00</strong><span>SEG</span></div></div>
+            <p id="countdownLabel">Reúne al escuadrón. La cuenta regresiva ya comenzó.</p>
+            <div class="progress-track"><div class="progress-shine"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section operator-section" id="operador">
+      <div class="container operator-grid">
+        <div class="operator-portrait">
+          <img src="assets/img/cumpleanero-ejemplo.webp" alt="Fotografía ilustrativa de niño gamer sonriente" />
+          <div class="operator-number">01</div><div class="operator-photo-footer"><span>IDENTIDAD DEL OPERADOR</span><strong>FOTOGRAFÍA DE EJEMPLO</strong></div>
+        </div>
+        <div class="operator-copy"><div class="eyebrow">02 // PERFIL DE OPERADOR</div><h2>CONOCE AL <span>COMANDANTE</span></h2><p>El operador más importante del escuadrón está por alcanzar un nuevo nivel. ¡Acompáñalo a celebrarlo!</p>
+          <div class="profile-table"><div><span>NOMBRE DE OPERADOR</span><strong id="operatorName">ALEX</strong></div><div><span>NIVEL DE COMBATE</span><strong id="operatorLevel">10</strong></div><div><span>RANGO</span><strong>LEYENDA DEL CUMPLEAÑOS</strong></div><div><span>ESTADO</span><strong class="online">● EN LÍNEA</strong></div></div>
+          <div class="id-card"><span>▤ ID TÁCTICA</span><strong id="idLabel">ALEX // NIV. 10</strong><em>PARTY PASS 2027</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section arsenal-section" id="arsenal">
+      <div class="container"><div class="section-heading"><div><div class="eyebrow">03 // LOADOUT PERSONALIZADO</div><h2>ELIGE TU <span>EQUIPAMIENTO</span></h2></div><p>Toca una tarjeta para equiparte antes de comenzar la misión.</p></div>
+        <div class="arsenal-layout"><div class="loadout-main hud-card"><div class="panel-title"><span>⌁</span> EQUIPAMIENTO ACTIVO <em>LOADOUT 01</em></div><img id="weaponArt" src="assets/img/weapon-rifle.svg" alt="Ilustración de rifle de videojuego" /><div class="weapon-info"><div><span class="micro-label">CLASE SELECCIONADA</span><h3 id="weaponName">RIFLE DE ASALTO</h3><p id="weaponDesc">Versátil y preciso. Tu mejor aliado en el campo de juego.</p></div><span class="weapon-tier">ÉPICO ◆</span></div></div>
+        <div class="loadout-list"><button class="loadout-option is-active" data-weapon="rifle"><span class="loadout-thumb">▰▰▰━━━━</span><div><strong>RIFLE DE ASALTO</strong><small>PRECISIÓN / CONTROL</small></div><span class="equip-state">EQUIPADO ✓</span></button><button class="loadout-option" data-weapon="sniper"><span class="loadout-thumb">━▰━━━━</span><div><strong>FRANCOTIRADOR</strong><small>VISIÓN / ALCANCE</small></div><span class="equip-state">EQUIPAR +</span></button><button class="loadout-option" data-weapon="smg"><span class="loadout-thumb">━▰▰━</span><div><strong>SUBFUSIL</strong><small>VELOCIDAD / MOVILIDAD</small></div><span class="equip-state">EQUIPAR +</span></button><button class="loadout-option" data-weapon="shield"><span class="loadout-thumb">⬡</span><div><strong>ESCUDO TÁCTICO</strong><small>DEFENSA / ESCUADRÓN</small></div><span class="equip-state">EQUIPAR +</span></button></div></div>
+      </div>
+    </section>
+
+    <section class="section gamemodes" id="modos">
+      <div class="container"><div class="section-heading"><div><div class="eyebrow">04 // EXPERIENCIA FAVORITA</div><h2>¿CUÁL ES TU <span>MODO FAVORITO?</span></h2></div><p>Elige uno. Su respuesta irá en el mensaje de confirmación para ayudar a organizar la fiesta.</p></div>
+        <div class="mode-grid" id="modeGrid">
+          <button class="mode-card is-selected" data-mode="WARZONE"><img src="https://xboxwire.thesourcemediaassets.com/sites/2/2023/11/CODWZ_S1-X1_-1920x1080-enUS_JPG-7bfcc41943e5c8cfdb37.jpg" data-fallback="assets/img/operacion-art.webp" alt="Imagen promocional de Call of Duty Warzone" loading="lazy"><span>01 / BATTLE ROYALE</span><strong>WARZONE</strong><small>DESPLIEGUE EN ESCUADRÓN</small><i>✓</i></button>
+          <button class="mode-card" data-mode="MULTIJUGADOR"><img src="https://cdn.mos.cms.futurecdn.net/Ay8SuBj2DJv5Qc7zW84uth.jpg" data-fallback="assets/img/despliegue-art.webp" alt="Imagen de operador y escenario de Call of Duty Warzone" loading="lazy"><span>02 / ACCIÓN</span><strong>MULTIJUGADOR</strong><small>PARTIDAS EN EQUIPO</small><i>✓</i></button>
+          <button class="mode-card" data-mode="RESURGIMIENTO"><img src="https://gaming-cdn.com/images/news/articles/18275/cover/call-of-duty-warzone-tendra-un-nuevo-modo-battle-royale-el-13-de-marzo-cover69a5f0d90d660.jpg" data-fallback="assets/img/operador-art.webp" alt="Imagen promocional de Call of Duty Warzone" loading="lazy"><span>03 / ACCIÓN RÁPIDA</span><strong>RESURGIMIENTO</strong><small>VUELVE A LA MISIÓN</small><i>✓</i></button>
+        </div><div class="mode-chosen"><span>◉ TU SELECCIÓN</span><strong id="chosenMode">WARZONE</strong><p>Se incluirá en tu confirmación de asistencia.</p></div>
+      </div>
+    </section>
+
+    <section class="section crate-section" id="recompensa">
+      <div class="container"><div class="section-heading"><div><div class="eyebrow">05 // MISIÓN INTERACTIVA</div><h2>ABRE LOS <span>SUMINISTROS</span></h2></div><p>Encuentra las tres insignias para desbloquear una recompensa de cumpleaños.</p></div>
+      <div class="crates-grid"><button class="crate" data-crate="0" aria-label="Abrir suministro alfa"><div class="crate-image"><span class="crate-glow"></span>✦<b>?</b></div><strong>CAJA ALFA</strong><span class="crate-small">TOCA PARA ABRIR</span></button><button class="crate" data-crate="1" aria-label="Abrir suministro bravo"><div class="crate-image"><span class="crate-glow"></span>✦<b>?</b></div><strong>CAJA BRAVO</strong><span class="crate-small">TOCA PARA ABRIR</span></button><button class="crate" data-crate="2" aria-label="Abrir suministro charlie"><div class="crate-image"><span class="crate-glow"></span>✦<b>?</b></div><strong>CAJA CHARLIE</strong><span class="crate-small">TOCA PARA ABRIR</span></button></div>
+      <div class="crate-footer"><div><span>PROGRESO DE MISIÓN</span><strong id="crateCount">0 / 3 INSIGNIAS</strong></div><div class="mission-progress"><span id="missionProgress"></span></div><button id="claimReward" class="btn btn-primary" disabled>DESBLOQUEAR RECOMPENSA →</button></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria"><div class="container"><div class="section-heading"><div><div class="eyebrow">06 // ARCHIVOS DEL ESCUADRÓN</div><h2>FOTOS DE LOS <span>RECLUTAS</span></h2></div><p>Imágenes ficticias para la demostración. Podrás sustituirlas por fotos reales autorizadas.</p></div>
+      <div class="gallery-layout"><button class="gallery-photo featured" data-photo="0"><img src="assets/img/nino-ejemplo-1.webp" alt="Niño ficticio gamer con audífonos naranjas"><span class="gallery-overlay"><b>OPERADOR PRINCIPAL</b><small>FOTO 01 / EJEMPLO</small></span></button><button class="gallery-photo" data-photo="1"><img src="assets/img/nino-ejemplo-2.webp" alt="Niña ficticia en cuarto gamer"><span class="gallery-overlay"><b>ESCUADRÓN ALFA</b><small>FOTO 02 / EJEMPLO</small></span></button><button class="gallery-photo" data-photo="2"><img src="assets/img/nino-ejemplo-3.webp" alt="Dos amigos ficticios jugando videojuegos"><span class="gallery-overlay"><b>AMIGOS DEL ESCUADRÓN</b><small>FOTO 03 / EJEMPLO</small></span></button><button class="gallery-photo" data-photo="3"><img src="assets/img/nino-ejemplo-4.webp" alt="Niño ficticio con audífonos gamer azules"><span class="gallery-overlay"><b>OPERADOR INVITADO</b><small>FOTO 04 / EJEMPLO</small></span></button></div>
+      <div class="gallery-footnote">* Fotos de niños generadas digitalmente. Son ficticias y únicamente ilustrativas.</div>
+    </div></section>
+
+    <section class="section rsvp-section" id="confirmar"><div class="container rsvp-grid"><div class="rsvp-copy"><div class="eyebrow">07 // ÚLTIMO OBJETIVO</div><h2>¡TE ESPERAMOS <span>EN LA MISIÓN!</span></h2><p>Confirma tu lugar en el escuadrón. El mensaje incluirá tu nombre, acompañantes y modo favorito de COD.</p><div class="rsvp-perks"><span>✓ ESCUADRÓN ACTIVADO</span><span>✓ RECOMPENSA ESPECIAL</span><span>✓ PASE DE ACCESO</span></div><div class="signal-graphic">MISSION<br><strong>ACCEPTED</strong><span>// ACCESO DEL OPERADOR</span></div></div>
+      <form id="rsvpForm" class="hud-card rsvp-form"><div class="panel-title"><span>✣</span> CONFIRMACIÓN DE ASISTENCIA <em>RSVP SYSTEM</em></div>
+      <div class="form-grid"><label>IDENTIFICACIÓN DEL RECLUTA<input id="guestName" placeholder="Tu nombre" maxlength="70" required /></label><label>¿ASISTIRÁS?<select id="guestStatus"><option value="Sí, estaré en la misión">SÍ, ESTARÉ EN LA MISIÓN</option><option value="No podré asistir">NO PODRÉ ASISTIR</option></select></label><label>ACOMPAÑANTES<select id="guestCompanions"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></label><label>MODO FAVORITO<input id="favoriteMode" value="WARZONE" readonly /></label><label class="span-2">MENSAJE ADICIONAL<textarea id="guestMessage" placeholder="¡Nos vemos en la misión!" rows="3" maxlength="500"></textarea></label></div>
+      <button class="btn btn-whatsapp" type="submit">◉ ENVIAR CONFIRMACIÓN POR WHATSAPP ↗</button><p class="form-note">La página no guarda respuestas. Al pulsar, se abre WhatsApp con el mensaje preparado; tú decides enviarlo.</p>
+      </form></div></section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-top"><a class="logo" href="#inicio"><span class="logo-mark">✣</span><span>CALL OF <b>DUTY</b><small>OPERACIÓN CUMPLEAÑOS</small></span></a><span>PERSONALIZADA PARA UN DÍA ÉPICO.</span></div><div class="footer-bottom"><span>Invitación temática no oficial, independiente de Activision. Imágenes promocionales de COD cargadas desde sus sitios de origen.</span><button id="effectsToggle" type="button">✦ EFECTOS: ON</button></div></div></footer>
+
+  <dialog id="rewardDialog" class="reward-dialog"><div class="reward-inner"><button aria-label="Cerrar recompensa" class="close-dialog" data-close>×</button><div class="reward-symbol">★</div><div class="eyebrow">OBJETIVO SECUNDARIO FINALIZADO</div><h2>¡MISIÓN <span>COMPLETADA!</span></h2><p>Desbloqueaste el pase especial de cumpleaños. ¡Confirma tu participación y prepárate para festejar!</p><a href="#confirmar" class="btn btn-primary" id="rewardConfirm">CONFIRMAR MI LUGAR ↗</a></div></dialog>
+  <dialog id="galleryDialog" class="gallery-dialog"><div class="gallery-modal-inner"><button aria-label="Cerrar fotografía" class="close-dialog" data-close>×</button><img id="galleryModalImg" src="" alt="Foto ampliada" /><div class="gallery-modal-controls"><button id="galleryPrev" aria-label="Foto anterior">← ANTERIOR</button><span id="galleryModalIndex">01 / 04</span><button id="galleryNext" aria-label="Siguiente foto">SIGUIENTE →</button></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/config.js"></script><script src="js/app.js"></script>
+</body>
+</html>

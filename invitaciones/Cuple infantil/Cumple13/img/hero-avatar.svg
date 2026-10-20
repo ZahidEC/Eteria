@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="930" viewBox="0 0 900 930" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E4F1FF"/>
+      <stop offset="1" stop-color="#FFE4F2"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B6CFF"/>
+      <stop offset="1" stop-color="#8E82FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="930" rx="56" fill="url(#bg)"/>
+  <rect x="50" y="55" width="160" height="160" rx="30" fill="#ffffff"/>
+  <rect x="92" y="97" width="76" height="76" rx="15" fill="#FF5DB1" transform="rotate(12 92 97)"/>
+  <circle cx="728" cy="142" r="80" fill="#FFD84D" fill-opacity="0.62"/>
+  <rect x="670" y="95" width="140" height="46" rx="23" fill="#ffffff"/>
+  <text x="694" y="125" font-size="24" font-family="Arial" fill="#4D5ACA">VIP PASS</text>
+  <g transform="translate(285 145)">
+    <rect x="110" y="10" width="115" height="115" rx="18" fill="#F6C27E"/>
+    <rect x="118" y="2" width="100" height="42" rx="16" fill="#5B2E13"/>
+    <circle cx="147" cy="64" r="8" fill="#1F2440"/>
+    <circle cx="188" cy="64" r="8" fill="#1F2440"/>
+    <path d="M144 92C157 104 179 104 192 92" stroke="#1F2440" stroke-width="6" stroke-linecap="round"/>
+    <rect x="74" y="134" width="190" height="160" rx="24" fill="url(#shirt)"/>
+    <rect x="34" y="142" width="44" height="140" rx="22" fill="#F6C27E"/>
+    <rect x="260" y="142" width="44" height="140" rx="22" fill="#F6C27E"/>
+    <rect x="102" y="294" width="56" height="170" rx="18" fill="#222B66"/>
+    <rect x="180" y="294" width="56" height="170" rx="18" fill="#222B66"/>
+    <rect x="90" y="452" width="80" height="34" rx="14" fill="#ffffff"/>
+    <rect x="168" y="452" width="80" height="34" rx="14" fill="#ffffff"/>
+    <rect x="102" y="174" width="132" height="62" rx="18" fill="#fff" fill-opacity="0.16"/>
+  </g>
+  <g opacity="0.92">
+    <circle cx="158" cy="760" r="68" fill="#35D48D"/>
+    <text x="126" y="774" font-size="42" font-family="Arial" fill="#fff">+50</text>
+    <circle cx="745" cy="716" r="78" fill="#FF5DB1"/>
+    <text x="700" y="731" font-size="34" font-family="Arial" fill="#fff">OBBY</text>
+  </g>
+  <rect x="242" y="770" width="410" height="90" rx="28" fill="#ffffff"/>
+  <text x="305" y="825" font-size="44" font-family="Arial" fill="#364491">PARTY WORLD</text>
+</svg>

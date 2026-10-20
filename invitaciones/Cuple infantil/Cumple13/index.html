@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación interactiva estilo Roblox 2.0 para cumpleaños." />
+  <title>Roblox Party 2.0 | Invitación interactiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-shapes"></div>
+
+  <header class="topbar">
+    <a href="#hero" class="brand">
+      <span class="brand__cube"></span>
+      <span class="brand__text">Roblox Party 2.0</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#brief">Evento</a>
+      <a href="#hub">Hub</a>
+      <a href="#avatars">Avatar</a>
+      <a href="#favorites">Favoritos</a>
+      <a href="#obby">Obby</a>
+      <a href="#rsvp">Confirmar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">INVITACIÓN ESPECIAL · MODO ROBLOX 2.0</p>
+          <h1><span id="heroName">Mateo</span> abrió su <em>Party World</em></h1>
+          <p class="hero__lead">Bienvenido a una fiesta convertida en videojuego: avatares, obby, badges, game pass, leaderboard, coins y tu selección de juego favorito.</p>
+          <div class="hero__actions">
+            <a href="#rsvp" class="btn btn--primary">Entrar al servidor</a>
+            <a href="#favorites" class="btn btn--ghost">Elegir juego favorito</a>
+          </div>
+
+          <div class="hero__chips">
+            <span>🎮 Party World</span>
+            <span>🧱 Obby</span>
+            <span>🪙 Coins</span>
+            <span>🏅 Badges</span>
+            <span>🎟️ Game Pass</span>
+          </div>
+
+          <div class="chat-stack">
+            <div class="chat-bubble chat-bubble--blue">Hola 👋 ¡Bienvenido al servidor!</div>
+            <div class="chat-bubble chat-bubble--pink">Completa el obby y consigue tu pase VIP 🎉</div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero-card hero-card--main glass-panel">
+            <img src="img/hero-avatar.svg" alt="Avatar principal estilo bloques" />
+          </div>
+
+          <div class="hero-floating hero-floating--one card-mini">
+            <strong id="heroAge">9</strong>
+            <span>Años</span>
+          </div>
+          <div class="hero-floating hero-floating--two card-mini">
+            <strong>VIP</strong>
+            <span>Game Pass</span>
+          </div>
+          <div class="hero-floating hero-floating--three card-mini">
+            <strong id="coinMini">0</strong>
+            <span>Coins</span>
+          </div>
+          <div class="hero-floating hero-floating--four leaderboard-mini">
+            <span>TOP PLAYERS</span>
+            <strong>#1 <span id="leaderName">Mateo</span></strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__ui">
+        <article class="panel glass-panel">
+          <p class="panel__label">DETALLES DEL EVENTO</p>
+          <ul class="detail-list">
+            <li><strong>Fecha:</strong> <span id="eventDate">Domingo 15 de noviembre de 2026</span></li>
+            <li><strong>Hora:</strong> <span id="eventTime">3:00 PM</span></li>
+            <li><strong>Lugar:</strong> <span id="eventPlace">Tulancingo, Hidalgo</span></li>
+          </ul>
+        </article>
+
+        <article class="panel glass-panel countdown-panel">
+          <p class="panel__label">CUENTA REGRESIVA</p>
+          <div class="countdown">
+            <div><strong id="days">00</strong><span>Días</span></div>
+            <div><strong id="hours">00</strong><span>Horas</span></div>
+            <div><strong id="minutes">00</strong><span>Min</span></div>
+            <div><strong id="seconds">00</strong><span>Seg</span></div>
+          </div>
+          <button class="btn btn--ghost btn--small" id="calendarBtn">Agregar al calendario</button>
+        </article>
+
+        <article class="panel glass-panel inventory-panel">
+          <p class="panel__label">INVENTARIO RÁPIDO</p>
+          <div class="inventory-bar">
+            <div class="inventory-slot is-active"><span>🧱</span><small>Block</small></div>
+            <div class="inventory-slot"><span>🪙</span><small>Coins</small></div>
+            <div class="inventory-slot"><span>🏅</span><small>Badge</small></div>
+            <div class="inventory-slot"><span>🎁</span><small>Loot</small></div>
+            <div class="inventory-slot"><span>🐾</span><small>Pet</small></div>
+            <div class="inventory-slot"><span>👑</span><small>VIP</small></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="brief">
+      <div class="container grid-two">
+        <div>
+          <p class="section-kicker">BIENVENIDO AL JUEGO</p>
+          <h2>Una fiesta con <span>muchos elementos Roblox</span></h2>
+          <p>Esta versión 2.0 está pensada para que los niños identifiquen la temática más rápido: interfaz de juego, chat, insignias, inventario, leaderboard, selección de juegos favoritos y una experiencia tipo servidor.</p>
+          <div class="feature-grid">
+            <article><span>Servidor</span><strong>Party World</strong></article>
+            <article><span>Modo</span><strong>Obby + Fiesta</strong></article>
+            <article><span>Invitado VIP</span><strong id="profileName">Mateo</strong></article>
+            <article><span>Edad</span><strong id="profileAge">9 años</strong></article>
+          </div>
+        </div>
+
+        <div class="pass-card">
+          <div class="pass-card__stub">
+            <span>VIP PASS</span>
+            <strong>RBLX</strong>
+          </div>
+          <div class="pass-card__content">
+            <p class="panel__label">PASE DE ACCESO</p>
+            <h3 id="passTitle">Acceso al cumple de Mateo</h3>
+            <p>Este pase te da entrada oficial al servidor del cumpleaños. Completa el obby, consigue badges y confirma tu entrada.</p>
+            <div class="pass-meta">
+              <span id="passDate">15 NOV 2026</span>
+              <span id="passTime">3:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hub" id="hub">
+      <div class="container">
+        <p class="section-kicker">HUB DEL JUEGO</p>
+        <h2>Extras que hacen que se sienta más <span>como Roblox</span></h2>
+        <div class="hub-grid">
+          <article class="glass-panel hub-card daily-card">
+            <p class="panel__label">DAILY REWARD</p>
+            <h3>Reclama tu recompensa</h3>
+            <p>Presiona para reclamar monedas extra antes de iniciar tu aventura.</p>
+            <button class="btn btn--primary btn--small" id="dailyRewardBtn">Reclamar 100 coins</button>
+          </article>
+
+          <article class="glass-panel hub-card badge-card">
+            <p class="panel__label">BADGES</p>
+            <div class="badge-list">
+              <span class="badge-item">🏅 Party Guest</span>
+              <span class="badge-item">🧱 Obby Starter</span>
+              <span class="badge-item">🪙 Coin Hunter</span>
+              <span class="badge-item">🎉 VIP Celebration</span>
+            </div>
+          </article>
+
+          <article class="glass-panel hub-card leaderboard-card">
+            <p class="panel__label">LEADERBOARD</p>
+            <ul class="leaderboard-list">
+              <li><strong>#1</strong><span id="boardName1">Mateo</span><small>999 pts</small></li>
+              <li><strong>#2</strong><span>Tú</span><small>450 pts</small></li>
+              <li><strong>#3</strong><span>Tu escuadrón</span><small>300 pts</small></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section avatars" id="avatars">
+      <div class="container">
+        <p class="section-kicker">SELECCIÓN DE AVATAR</p>
+        <h2>Elige tu <span>skin favorita</span></h2>
+        <div class="avatar-layout">
+          <div class="avatar-showcase glass-panel">
+            <img id="avatarPreview" src="img/avatar-blue.svg" alt="Avatar seleccionado" />
+            <div class="avatar-copy">
+              <p class="panel__label">AVATAR ACTIVO</p>
+              <h3 id="avatarTitle">Builder Pro</h3>
+              <p id="avatarDesc">Listo para construir, saltar y ganar monedas en el servidor de la fiesta.</p>
+            </div>
+          </div>
+          <div class="avatar-options">
+            <button class="avatar-btn is-active" data-image="img/avatar-blue.svg" data-title="Builder Pro" data-desc="Listo para construir, saltar y ganar monedas en el servidor de la fiesta.">Builder Pro</button>
+            <button class="avatar-btn" data-image="img/avatar-pink.svg" data-title="Star Dancer" data-desc="Brilla en la pista y supera cada reto del mundo Roblox.">Star Dancer</button>
+            <button class="avatar-btn" data-image="img/avatar-green.svg" data-title="Obby Master" data-desc="Especialista en parkour, plataformas y niveles secretos.">Obby Master</button>
+            <button class="avatar-btn" data-image="img/avatar-gold.svg" data-title="VIP Legend" data-desc="La skin premium del día, con energía legendaria para la fiesta.">VIP Legend</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section favorites" id="favorites">
+      <div class="container">
+        <p class="section-kicker">¿CUÁL ES TU JUEGO FAVORITO?</p>
+        <h2>Elige tu experiencia <span>Roblox favorita</span></h2>
+        <p class="section-lead">Esta sección nos puede ayudar a personalizar mesas, dinámicas, detalles o áreas temáticas de la fiesta. Selecciona el juego que más te guste.</p>
+
+        <div class="favorite-grid">
+          <button class="fav-card is-selected" data-game="Brookhaven">
+            <img src="img/game-brookhaven.svg" alt="Brookhaven" />
+            <strong>Brookhaven</strong>
+            <small>Vida social</small>
+          </button>
+          <button class="fav-card" data-game="Adopt Me">
+            <img src="img/game-adoptme.svg" alt="Adopt Me" />
+            <strong>Adopt Me</strong>
+            <small>Mascotas</small>
+          </button>
+          <button class="fav-card" data-game="Blox Fruits">
+            <img src="img/game-bloxfruits.svg" alt="Blox Fruits" />
+            <strong>Blox Fruits</strong>
+            <small>Aventura</small>
+          </button>
+          <button class="fav-card" data-game="Doors">
+            <img src="img/game-doors.svg" alt="Doors" />
+            <strong>Doors</strong>
+            <small>Misterio</small>
+          </button>
+          <button class="fav-card" data-game="Rainbow Friends">
+            <img src="img/game-rainbowfriends.svg" alt="Rainbow Friends" />
+            <strong>Rainbow Friends</strong>
+            <small>Colores</small>
+          </button>
+          <button class="fav-card" data-game="Tower of Hell">
+            <img src="img/game-towerofhell.svg" alt="Tower of Hell" />
+            <strong>Tower of Hell</strong>
+            <small>Obby extremo</small>
+          </button>
+          <button class="fav-card" data-game="BedWars">
+            <img src="img/game-bedwars.svg" alt="BedWars" />
+            <strong>BedWars</strong>
+            <small>Batallas</small>
+          </button>
+          <button class="fav-card" data-game="Piggy">
+            <img src="img/game-piggy.svg" alt="Piggy" />
+            <strong>Piggy</strong>
+            <small>Escape</small>
+          </button>
+        </div>
+
+        <div class="glass-panel selection-panel">
+          <div>
+            <p class="panel__label">SELECCIÓN ACTUAL</p>
+            <h3 id="selectedGame">Brookhaven</h3>
+            <p>Este dato también se enviará en la confirmación por WhatsApp para ayudarte a organizar la fiesta.</p>
+          </div>
+          <div class="selection-tag">
+            <span>Game Pick</span>
+            <strong id="selectedGameTag">Brookhaven</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section obby" id="obby">
+      <div class="container">
+        <p class="section-kicker">MISIÓN INTERACTIVA</p>
+        <h2>Supera el <span>obby</span> y reúne monedas</h2>
+        <p class="section-lead">Toca cada plataforma para avanzar. Cuando completes las 5, desbloquearás una recompensa final y sumarás coins al contador.</p>
+        <div class="obby-track">
+          <button class="step-card" data-step="1"><span>Nivel 1</span><strong>Salto inicial</strong><small>Haz clic para avanzar</small></button>
+          <button class="step-card" data-step="2"><span>Nivel 2</span><strong>Puente de bloques</strong><small>Haz clic para avanzar</small></button>
+          <button class="step-card" data-step="3"><span>Nivel 3</span><strong>Carrera de monedas</strong><small>Haz clic para avanzar</small></button>
+          <button class="step-card" data-step="4"><span>Nivel 4</span><strong>Zona arcoíris</strong><small>Haz clic para avanzar</small></button>
+          <button class="step-card" data-step="5"><span>Nivel 5</span><strong>Meta final</strong><small>Haz clic para avanzar</small></button>
+        </div>
+        <div class="progress-panel glass-panel">
+          <div>
+            <p class="panel__label">PROGRESO</p>
+            <h3><span id="progressCount">0</span>/5 niveles completados</h3>
+            <p id="progressText">Empieza el obby para desbloquear las monedas de la fiesta.</p>
+          </div>
+          <div class="coin-bank">
+            <strong id="coinCount">0</strong>
+            <span>Coins</span>
+          </div>
+          <button class="btn btn--primary" id="rewardBtn" disabled>Abrir recompensa</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <p class="section-kicker">GALERÍA DEL JUGADOR</p>
+        <h2>Momentos del <span>servidor</span></h2>
+        <div class="gallery-grid">
+          <button class="gallery-item" data-image="img/gallery-1.svg" data-title="Modo diversión"><img src="img/gallery-1.svg" alt="Galería 1" /></button>
+          <button class="gallery-item" data-image="img/gallery-2.svg" data-title="Avatar party"><img src="img/gallery-2.svg" alt="Galería 2" /></button>
+          <button class="gallery-item" data-image="img/gallery-3.svg" data-title="Bloques y premios"><img src="img/gallery-3.svg" alt="Galería 3" /></button>
+          <button class="gallery-item" data-image="img/gallery-4.svg" data-title="Victoria desbloqueada"><img src="img/gallery-4.svg" alt="Galería 4" /></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="container grid-two">
+        <div>
+          <p class="section-kicker">CONFIRMA TU ENTRADA</p>
+          <h2>Únete a la <span>party world</span></h2>
+          <p>Reserva tu lugar dentro del servidor del cumpleaños. La confirmación también incluirá el juego favorito seleccionado, para ayudar a personalizar la experiencia.</p>
+          <ul class="info-list">
+            <li>🎂 Celebración temática Roblox</li>
+            <li>🧁 Botanas, pastel y juegos</li>
+            <li>🪙 Coins, badges y game pass</li>
+            <li>🎮 Juego favorito para personalización</li>
+          </ul>
+        </div>
+        <form class="rsvp-form glass-panel" id="rsvpForm">
+          <input type="hidden" id="favoriteGameInput" value="Brookhaven" />
+          <label>
+            Nombre del invitado
+            <input type="text" id="guestName" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            ¿Asistirás?
+            <select id="guestStatus">
+              <option value="Sí, entraré al servidor">Sí, entraré al servidor</option>
+              <option value="No podré entrar al servidor">No podré entrar al servidor</option>
+            </select>
+          </label>
+          <label>
+            Acompañantes
+            <select id="guestCompanions">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+          <label>
+            Juego favorito
+            <input type="text" id="favoriteGameMirror" value="Brookhaven" readonly />
+          </label>
+          <label>
+            Mensaje para el cumpleañero
+            <textarea id="guestMessage" placeholder="Escribe tu mensaje..."></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Confirmar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Roblox Party Invite 2.0</strong>
+        <p>Invitación interactiva inspirada en mundos de bloques, social games, obbies y experiencias Roblox.</p>
+      </div>
+      <button class="btn btn--ghost btn--small" id="fxToggle">Activar efectos</button>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="rewardModal">
+    <div class="modal__content reward-modal">
+      <p class="panel__label">RECOMPENSA DESBLOQUEADA</p>
+      <h3>¡Ganaste el Party Pass!</h3>
+      <p>Completaste el obby y desbloqueaste un pase especial. Ya casi estás listo para entrar al servidor del cumpleaños.</p>
+      <div class="reward-badge">VIP<br>PASS</div>
+      <button class="btn btn--primary modal-close">Cerrar</button>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="galleryModal">
+    <div class="modal__content gallery-modal-content">
+      <img id="modalImage" src="" alt="Vista ampliada" />
+      <div class="gallery-modal__meta">
+        <h3 id="modalTitle">Galería</h3>
+        <button class="btn btn--primary modal-close">Cerrar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
