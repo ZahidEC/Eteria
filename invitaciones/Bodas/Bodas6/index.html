@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#282620">
+  <meta name="description" content="Eternamente. Una invitación para celebrar el amor, los encuentros y una vida juntos.">
+  <title>Eternamente · Sofía & Mateo</title>
+  <link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <div class="curtain curtain-left" aria-hidden="true"></div><div class="curtain curtain-right" aria-hidden="true"></div>
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  <header class="header" id="header">
+    <a class="monogram" href="#inicio" data-monogram>S / M</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation">☰</button>
+    <nav id="navigation" aria-label="Principal"><a href="#historia">Nosotros</a><a href="#dia">La celebración</a><a href="#regalos">Mesa de regalos</a><a class="nav-button" href="#rsvp">Confirmar asistencia ↗</a></nav>
+  </header>
+  <main>
+    <!-- 01 · UNA PORTADA CINEMATOGRÁFICA -->
+    <section class="hero" id="inicio">
+      <img class="hero-image" src="assets/images/portada.webp" alt="Novios abrazados en una villa al anochecer, rodeados de flores y velas" width="1536" height="1024" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-topline"><span>UNA CELEBRACIÓN DEL AMOR</span><span data-date-short>24 · 08 · 2027</span></div>
+      <div class="hero-copy"><p class="eyebrow">CONTIGO. HOY. SIEMPRE.</p><h1><span data-bride>Sofía</span> <i>&</i><br><span data-groom>Mateo</span></h1><p>Elegirnos, una y otra vez.</p><a class="hero-link" href="#invitacion">DESCUBRE NUESTRA INVITACIÓN <span>↓</span></a></div>
+      <div class="hero-bottom"><span data-location>Zapopan, Jalisco</span><span>EST. 2019 — PARA SIEMPRE</span></div>
+    </section>
+    <!-- 02 · LA INVITACIÓN -->
+    <section class="invitation section" id="invitacion">
+      <p class="eyebrow reveal">HAY MOMENTOS QUE LO CAMBIAN TODO</p>
+      <h2 class="large-quote reveal">De todas las historias,<br>la nuestra es mi <em>favorita.</em></h2>
+      <div class="fine-ornament" aria-hidden="true"><span></span>✧<span></span></div>
+      <p class="invitation-text reveal">Con la alegría de nuestras familias, queremos compartir contigo el comienzo de una nueva vida. Una noche de abrazos, promesas y recuerdos que guardaremos para siempre.</p>
+      <div class="date-plaque reveal"><span>MARTES</span><strong>24</strong><div><span>AGOSTO</span><span>2027</span></div></div>
+      <button class="text-link" id="calendar-button">Añadir a mi calendario <span>↗</span></button>
+    </section>
+    <!-- 03 · UNA HISTORIA EDITORIAL -->
+    <section class="story section" id="historia">
+      <div class="story-visual reveal"><div class="photo-mat"><button class="portrait-button" id="story-photo" aria-haspopup="dialog" aria-label="Ampliar nuestra fotografía"><img src="assets/images/historia-04.webp" alt="Una propuesta de matrimonio en un jardín iluminado" width="1122" height="1402" loading="lazy"></button></div><span class="vertical-label">THE BEGINNING OF FOREVER</span><p class="photo-caption">Un instante. Toda una vida.</p></div>
+      <div class="story-copy"><p class="eyebrow reveal">CAPÍTULO I · NOSOTROS</p><h2 class="reveal">Y entonces,<br>llegaste <em>tú.</em></h2><p class="reveal">Lo que comenzó con una mirada se convirtió en nuestro lugar favorito. Entre viajes, cafés y días sencillos, aprendimos que el amor también es elegir lo cotidiano.</p><div id="story-moments" class="story-moments"></div><p class="signature reveal">Ahora, escribimos el siguiente capítulo.</p></div>
+    </section>
+    <!-- 04 · CUENTA REGRESIVA -->
+    <section class="countdown-section"><p class="eyebrow">LA ESPERA MÁS BONITA</p><h2>Cada segundo nos acerca <em>a ti.</em></h2><div class="countdown"><div><strong id="days">00</strong><span>DÍAS</span></div><div><strong id="hours">00</strong><span>HORAS</span></div><div><strong id="minutes">00</strong><span>MINUTOS</span></div><div><strong id="seconds">00</strong><span>SEGUNDOS</span></div></div><p id="countdown-note" class="countdown-note">Para empezar nuestro para siempre.</p></section>
+    <!-- 05 · EL GRAN DÍA -->
+    <section class="celebration section" id="dia"><div class="section-heading reveal"><div><p class="eyebrow">CAPÍTULO II · LA CELEBRACIÓN</p><h2>Una noche.<br><em>Mil recuerdos.</em></h2></div><p>Vístete de ilusión.<br>Nosotros ponemos el resto.</p></div><div class="venue-layout"><div class="venue-image reveal"><img src="assets/images/mesa.webp" alt="Una mesa de boda con flores vino y marfil, cristalería y velas" width="1536" height="1024" loading="lazy"><span class="image-label">UNA NOCHE PARA CELEBRARNOS</span></div><div class="venue-details reveal"><p class="eyebrow">EL ESCENARIO DE NUESTRO SÍ</p><h3 data-venue>Hacienda San Rafael</h3><p data-location>Zapopan, Jalisco</p><p class="venue-description">Un jardín, luz de velas y todas nuestras personas favoritas en un mismo lugar.</p><a class="text-link" id="map-link" target="_blank" rel="noopener noreferrer">Ver ubicación ↗</a></div></div><div class="agenda" id="agenda"></div><div class="dress-note reveal"><span class="dress-mark" aria-hidden="true">✧</span><div><p class="eyebrow">CÓDIGO DE VESTIMENTA</p><h3>Formal de noche</h3><p>Vestido largo o traje oscuro. Reservamos el blanco para la novia.</p></div><div class="swatches" aria-label="Colores sugeridos: vino, rosa antiguo, verde oliva y azul noche"><span></span><span></span><span></span><span></span></div></div></section>
+    <!-- 06 · RECUERDOS -->
+    <section class="gallery-section section" id="recuerdos"><div class="section-heading reveal"><div><p class="eyebrow">LO EXTRAORDINARIO DE LO COTIDIANO</p><h2>Así se ve <em>el amor.</em></h2></div><p>Cinco recuerdos.<br>Una historia que sigue.</p></div><div class="gallery-grid" id="gallery-grid"></div><p class="gallery-hint">PULSA UNA FOTO PARA VERLA COMPLETA</p></section>
+    <!-- 07 · MESA DE REGALOS -->
+    <section class="gifts section" id="regalos"><div class="gifts-heading reveal"><span class="gift-emblem" aria-hidden="true">✧</span><p class="eyebrow">CAPÍTULO III · LOS BUENOS DESEOS</p><h2>Tu presencia,<br>nuestro mejor <em>regalo.</em></h2><p>Si además quieres acompañarnos con un detalle, aquí encontrarás distintas formas de ser parte de nuestros primeros sueños juntos.</p></div><div class="gift-options">
+      <button class="gift-card reveal" data-gift="stores" aria-haspopup="dialog"><span class="gift-number">01</span><span class="gift-card-title">Mesa de regalos</span><span class="gift-card-description">Detalles para nuestro nuevo hogar</span><span class="gift-arrow" aria-hidden="true">↗</span></button>
+      <button class="gift-card reveal" data-gift="bank" aria-haspopup="dialog"><span class="gift-number">02</span><span class="gift-card-title">Un regalo con cariño</span><span class="gift-card-description">Consulta los datos de transferencia</span><span class="gift-arrow" aria-hidden="true">↗</span></button>
+      <button class="gift-card reveal" data-gift="honeymoon" aria-haspopup="dialog"><span class="gift-number">03</span><span class="gift-card-title">Nuestra luna de miel</span><span class="gift-card-description">Un recuerdo para toda la vida</span><span class="gift-arrow" aria-hidden="true">↗</span></button>
+    </div><p class="gift-footer">Sea cual sea tu elección, gracias por ser parte de nuestra historia.</p></section>
+    <!-- 08 · RSVP -->
+    <section class="rsvp section" id="rsvp"><div class="rsvp-intro reveal"><p class="eyebrow">EL ÚLTIMO DETALLE ERES TÚ</p><h2>¿Nos acompañas<br>a decir <em>sí?</em></h2><p>Hay un lugar en nuestra mesa y en nuestro corazón esperando por ti.</p><div class="rsvp-deadline"><span>CONFIRMA ANTES DEL</span><strong data-deadline>1 de agosto de 2027</strong></div><p class="signature">Con amor, <span data-bride>Sofía</span> y <span data-groom>Mateo</span>.</p></div><form id="rsvp-form" class="rsvp-form reveal"><label for="guest-name">Nombre completo</label><input id="guest-name" name="name" required maxlength="100" autocomplete="name" placeholder="Tu nombre y apellidos"><fieldset><legend>¿Podrás acompañarnos?</legend><label class="radio-choice"><input type="radio" name="attendance" value="Sí" required> Sí, celebraré con ustedes</label><label class="radio-choice"><input type="radio" name="attendance" value="No"> Los acompañaré de corazón</label></fieldset><div class="form-row"><div><label for="guests">Acompañantes</label><select id="guests" name="guests"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></div><div><label for="meal">Preferencia de menú</label><select id="meal" name="meal"><option>Tradicional</option><option>Vegetariano</option><option>Vegano</option></select></div></div><label for="message">Un mensaje o restricciones alimentarias</label><textarea id="message" name="message" rows="3" maxlength="500" placeholder="Cuéntanos aquí…"></textarea><button class="button" type="submit">Confirmar mi respuesta <span>↗</span></button><p class="form-note" id="form-note">Muestra: tu respuesta se guarda solo en este navegador.</p><p id="rsvp-status" role="status"></p></form></section>
+    <!-- 09 · PREGUNTAS ÚTILES -->
+    <section class="faq section"><p class="eyebrow">PARA DISFRUTAR SIN PRISAS</p><h2>Los pequeños <em>detalles.</em></h2><div class="faq-list"><details><summary>¿A qué hora conviene llegar?</summary><p>Te sugerimos llegar 20 minutos antes de la ceremonia para encontrar tu lugar con calma.</p></details><details><summary>¿Puedo elegir un menú especial?</summary><p>Sí. Indica tu preferencia y cualquier alergia o restricción alimentaria al confirmar tu asistencia.</p></details><details><summary>¿Cómo funciona la mesa de regalos?</summary><p>Selecciona una de las tres opciones para consultar las tiendas, los datos de transferencia o el enlace de luna de miel. No se realizan pagos dentro de esta invitación.</p></details></div></section>
+  </main>
+  <footer><p class="eyebrow">TODO LO BONITO, CONTIGO.</p><a href="#inicio" class="footer-names"><span data-bride>Sofía</span> <i>&</i> <span data-groom>Mateo</span></a><p data-date-long></p><span class="footer-flourish" aria-hidden="true">✧</span><small>Invitación de muestra · Datos y fotografías ilustrativos</small></footer>
+  <button class="effects-toggle" id="effects-toggle" aria-pressed="false">Pausar efectos</button>
+  <!-- GALERÍA -->
+  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="Galería de fotos"><button class="close" aria-label="Cerrar galería">×</button><div id="gallery-stage"><img id="gallery-image" alt=""></div><div class="gallery-controls"><button id="gallery-prev" aria-label="Foto anterior">←</button><p id="gallery-caption" aria-live="polite"></p><button id="gallery-next" aria-label="Foto siguiente">→</button></div></dialog>
+  <!-- MESA DE REGALOS: datos reales en config.js -->
+  <dialog class="gift-dialog" id="gift-dialog" aria-labelledby="gift-title"><button class="close" aria-label="Cerrar mesa de regalos">×</button><p class="eyebrow">CON TODO NUESTRO CARIÑO</p><h2 id="gift-title">Mesa de regalos</h2><div class="gift-tabs" role="tablist" aria-label="Opciones de regalo"><button role="tab" id="tab-stores" aria-controls="gift-panel" data-tab="stores">Tiendas</button><button role="tab" id="tab-bank" aria-controls="gift-panel" data-tab="bank">Transferencia</button><button role="tab" id="tab-honeymoon" aria-controls="gift-panel" data-tab="honeymoon">Luna de miel</button></div><div id="gift-panel" role="tabpanel" tabindex="0"></div><p class="gift-dialog-note">Gracias por acompañar este nuevo comienzo.</p></dialog>
+</body>
+</html>
